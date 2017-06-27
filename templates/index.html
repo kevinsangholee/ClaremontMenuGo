@@ -1,0 +1,48 @@
+{{ template "templates/head.html" . }}
+
+<header>
+    <img id="logo" class="hdr" src="/img/logo.png" alt="Claremont Menu logo">
+    <h1 id="title_text">Claremont Menu</h1>
+</header>
+<div class="container">
+    <div class="col-md-8 col-md-offset-2 menu_div">
+        <div class="tabs">
+            <button class="schooltab school_left active" id="frank">Frank</button>
+            <button class="schooltab school_left" id="frary">Frary</button>
+            <button class="schooltab school_left" id="oldenborg">Oldenborg</button>
+            <button class="schooltab school_left" id="collins">Collins</button>
+            <button class="schooltab school_left" id="scripps">Scripps</button>
+            <button class="schooltab school_left" id="pitzer">Pitzer</button>
+            <button class="schooltab school_right" id="mudd">Mudd</button>
+        </div>
+        <div class="tabs">
+            <button class="mealtab meal_end active" id="break">Breakfast</button>
+            <button class="mealtab meal_middle" id="lunch">Lunch</button>
+            <button class="mealtab meal_end" id="dinner">Dinner</button>
+        </div>
+
+        <!--<% for(var i = 0; i < allFoodData.length; i++) { %>-->
+            <div class="menu_table" id="table0">
+                {{ template "templates/food_cell.html" }}
+                <!--<% allFoodData[i].forEach(function(food) { %>-->
+                    <!--<div class="food_cell" id="<%= food.id%>">-->
+                        <!--<img src=<%= food.image %> alt="image" class="food_image">-->
+                        <!--<h3 class="food_name"><span><%= food.name %></span></h3>-->
+                        <!--<div class="rating_stars"></div>-->
+                        <!--<h2 class="rating_number">(<%= food.rating %>/5)</h2>-->
+                    <!--</div>-->
+                    <!--<div class="reviews_cell">-->
+                    <!--</div>-->
+                <!--<% }); %>-->
+                <!--<% if(allFoodData[i].length == 0) { %>-->
+                    <!--<div class="empty_menu">-->
+                        <!--<img srimgages/face.png">-->
+                        <!--<h1>Nothing on the menu for today!</h1>-->
+                    <!--</div>-->
+                <!--<% } %>-->
+            </div>
+        <!--<% }; %>-->
+    </div>
+</div>
+
+{{ template "templates/foot.html" . }}

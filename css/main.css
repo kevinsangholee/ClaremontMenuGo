@@ -1,0 +1,250 @@
+html body {
+    background-color: #FFF7E6 !important
+}
+
+body {
+    margin: 0;
+}
+
+/* Overriding */
+
+.ui-accordion-header:focus {
+    outline: none;
+}
+
+.ui-state-active {
+    color: black;
+}
+
+.ui-corner-top, .ui-corner-all, .ui-state-default, .ui-state-active {
+    border: 0;
+    border-radius: 0px;
+}
+
+/* Main top part */
+
+#logo {
+    width: 256px;
+    height: 256px;
+    display: block;
+    margin: -20px auto;
+}
+
+#title_text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 3em;
+    margin-top: -30px;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+.menu_div {
+    padding: 0;
+    background-color: red;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+/* Tab stuff */
+
+div.tabs {
+    overflow: hidden;
+    background-color: #F1F1F1;
+    display: flex;
+    justify-content: space-around;
+}
+
+div.tabs button {
+    background-color: inherit;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+    font-weight: 300;
+    letter-spacing: 0.07em;
+    width: 100%;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+}
+
+div.tabs button:hover {
+    background-color: #5189E2;
+    color: white;
+}
+
+div.tabs button.active {
+    background-color: #5189E2;
+    color: white;
+}
+
+.meal_end {
+    border-top: 1px solid #ccc ;
+    border-bottom: 0;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.meal_middle {
+    border-top: 1px solid #ccc ;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.school_left {
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    border-right: 0;
+    border-bottom: 0;
+}
+
+.school_right {
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 0;
+}
+
+/* Table stuff */
+
+.menu_table {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: relative;
+    background-color: orange;
+}
+
+.food_cell {
+    transition: background-color 0.5s ease;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    margin: 0;
+    width: 100%;
+    height: 85px;
+    background-color: #EDEDED;
+    overflow: hidden;
+}
+
+.food_image, .food_name, .rating_stars, .rating_number {
+    display: inline-block;
+}
+
+.food_name, .rating_number, span{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    height: 85px;
+    line-height: 85px;
+    margin: 0;
+}
+
+.food_image {
+    vertical-align: baseline;
+    margin: 5px 15px;
+    height: 75px;
+    width: 75px;
+    float: left;
+    border-radius: 50%;
+    border: 2px solid #ADADAD;
+}
+
+.food_name {
+    float: left;
+    position: relative;
+    font-weight: normal;
+    width: 410px;
+    overflow: hidden;
+}
+
+.food_name .too_long {
+    position: absolute;
+    white-space: nowrap;
+    transition: 4s;
+    -webkit-transition: 4s;
+    -moz-transition: 4s;
+    transform: translateX(0);
+}
+
+.food_cell:hover .food_name .too_long {
+    transform: translateX(calc(300px - 100%));
+}
+
+.rating_number {
+    float: right;
+    font-size: 1.3em;
+}
+
+.rating_stars {
+    float: right;
+    margin: 26px 15px 26px 5px;
+}
+
+
+.ui-state-hover {
+    background-color: #5189E2;
+    color: white;
+}
+
+.empty_menu {
+    height: 500px;
+    background-color: #EDEDED;
+    border: 1px solid #ccc;
+}
+
+.empty_menu h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0;
+    line-height: 100px;
+}
+
+.empty_menu img {
+    position: relative;
+    left: 40%;
+    margin-top: 100px;
+    height: 150px;
+    width: 150px;
+}
+
+.reviews_cell {
+    background-color: #CCC;
+}
+
+.review_bubble h2, .review_bubble h3 {
+    font-family: 'Open-Sans', sans-serif;
+    font-weight: 300;
+    color: white;
+}
+
+.review_bubble h2 {
+    font-size: 1.5em;
+}
+
+.review_bubble h3 {
+    font-size: 1.2em;
+}
+
+.review_bubble {
+    background-color: #5189E2;
+    border-radius: 15px;
+    padding: 5px 15px; 
+    margin: 0px -15px;
+}
+
+.review_stars {
+    display: block;
+}
+
+.review_bubble .review_stars {
+    padding: 0;
+    margin-top: 5px;
+    display: inline-block;   
+}
