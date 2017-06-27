@@ -8,12 +8,12 @@ import (
 	"log"
 )
 
-const (
-	DB_HOST = "jj820qt5lpu6krut.cbetxkdyhwsb.us-east-1.rds.amazonaws.com"
-	DB_USER = "vc568j0frxncao3a"
-	DB_PASS = "yq4trluh9rq7tvkt"
-	DB_NAME = "pzw6eam7d8a9orvg"
-)
+//const (
+//	DB_HOST = "tcp(claremontmenu.com:3306)"
+//	DB_USER = "claremo7_klee"
+//	DB_PASS = "Miyukguk369"
+//	DB_NAME = "claremo7_claremontmenu"
+//)
 
 func main() {
 	var review_text string
@@ -24,24 +24,21 @@ func main() {
 	router.Static("/js", "./js")
 	router.Static("/img", "./img")
 
-	dsn := DB_USER + ":" + DB_PASS + "@" + DB_HOST + "/" + DB_NAME
-	db, err := sql.Open("mysql", dsn)
+	//dsn := DB_USER + ":" + DB_PASS + "@" + DB_HOST + "/" + DB_NAME
+	db, err := sql.Open("mysql", "vc568j0frxncao3a:yq4trluh9rq7tvkt@tcp(jj820qt5lpu6krut.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306)/pzw6eam7d8a9orvg")
 	if err != nil {
 		log.Fatal(err)
 	} else {
 		log.Println("Connected to database successfully!")
 	}
 	defer db.Close()
-	rows, err := db.Query("SELECT * FROM reviews")
-	
-	defer rows.Close()
-	for rows.Next() {
-		err := rows.Scan(&review_text)
-		if err != nil {
-			log.Fatal(err)
-		}
-		log.Println(review_text)
+	row := db.QueryRow("SELECT review_text FROM reviews WHERE id=319")
+
+	if err := row.Scan(&review_text); err != nil {
+		log.Fatal(err)
 	}
+
+	log.Println(review_text)
 
 	router.GET("/", func(c *gin.Context) {
 		c.HTML(http.StatusOK, "index.html", gin.H{

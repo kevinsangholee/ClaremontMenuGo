@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="875173a0-369b-4419-98c9-79beefd4c2c7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/index.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/index.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.go" afterPath="$PROJECT_DIR$/main.go" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,11 +17,12 @@
       <file leaf-file-name="main.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="35" column="4" lean-forward="false" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+            <state relative-caret-position="283">
+              <caret line="40" column="28" lean-forward="false" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
               <folding>
                 <element signature="e#14#124#0" expanded="true" />
-                <marker date="1498601139000" expanded="true" signature="818:839" ph="SELECT * FRO... reviews" />
+                <marker date="1498602866000" expanded="true" signature="914:945" ph="SELECT * FRO... reviews" />
+                <marker date="1498602866000" expanded="true" signature="914:958" ph="SELECT revie... reviews" />
               </folding>
             </state>
           </provider>
@@ -372,11 +370,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="4" lean-forward="false" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+        <state relative-caret-position="283">
+          <caret line="40" column="28" lean-forward="false" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
           <folding>
             <element signature="e#14#124#0" expanded="true" />
-            <marker date="1498601139000" expanded="true" signature="818:839" ph="SELECT * FRO... reviews" />
+            <marker date="1498602866000" expanded="true" signature="914:945" ph="SELECT * FRO... reviews" />
+            <marker date="1498602866000" expanded="true" signature="914:958" ph="SELECT revie... reviews" />
           </folding>
         </state>
       </provider>
