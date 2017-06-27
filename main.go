@@ -6,17 +6,24 @@ import (
 	"database/sql"
 	_ "github.com/go-sql-driver/mysql"
 	"log"
+	"os"
 )
 
-//const (
-//	DB_HOST = "tcp(claremontmenu.com:3306)"
-//	DB_USER = "claremo7_klee"
-//	DB_PASS = "Miyukguk369"
-//	DB_NAME = "claremo7_claremontmenu"
-//)
+const (
+	DB_HOST = "tcp(jj820qt5lpu6krut.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306)"
+	DB_USER = "vc568j0frxncao3a"
+	DB_PASS = "yq4trluh9rq7tvkt"
+	DB_NAME = "pzw6eam7d8a9orvg"
+)
 
 func main() {
 	var review_text string
+
+	port := os.Getenv("PORT")
+
+	if port == "" {
+		log.Fatal("$PORT must be set")
+	}
 
 	router := gin.Default()
 	router.LoadHTMLFiles("templates/index.html", "templates/foot.html", "templates/head.html", "templates/food_cell.html")
@@ -24,8 +31,8 @@ func main() {
 	router.Static("/js", "./js")
 	router.Static("/img", "./img")
 
-	//dsn := DB_USER + ":" + DB_PASS + "@" + DB_HOST + "/" + DB_NAME
-	db, err := sql.Open("mysql", "vc568j0frxncao3a:yq4trluh9rq7tvkt@tcp(jj820qt5lpu6krut.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306)/pzw6eam7d8a9orvg")
+	dsn := DB_USER + ":" + DB_PASS + "@" + DB_HOST + "/" + DB_NAME
+	db, err := sql.Open("mysql", dsn)
 	if err != nil {
 		log.Fatal(err)
 	} else {
@@ -46,5 +53,5 @@ func main() {
 		})
 	})
 
-	router.Run(":8080")
+	router.Run(":" + port)
 }
