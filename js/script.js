@@ -13,7 +13,7 @@ $(document).ready(function() {
         heightStyle: 'panel'
     });
     $('.menu_table').hide();
-    $('#table0').show();
+    $('#table00').show();
 
 
     $('.rating_stars').each(function(i, star) {
@@ -94,47 +94,47 @@ $(document).ready(function() {
             $('.menu_table').hide();
             switch(str) {
                 case "frankbreak":
-                    $('#table0').show(); break;
+                    $('#table00').show(); break;
                 case "franklunch":
-                    $('#table1').show(); break;
+                    $('#table01').show(); break;
                 case "frankdinner":
-                    $('#table2').show(); break;
+                    $('#table02').show(); break;
                 case "frarybreak":
-                    $('#table3').show(); break;
-                case "frarylunch":
-                    $('#table4').show(); break;
-                case "frarydinner":
-                    $('#table5').show(); break;
-                case "oldenborgbreak":
-                    $('#table6').show(); break;                                                                         
-                case "oldenborglunch":
-                    $('#table7').show(); break;
-                case "oldenborgdinner":
-                    $('#table8').show(); break;
-                case "collinsbreak":
-                    $('#table9').show(); break;             
-                case "collinslunch":
                     $('#table10').show(); break;
+                case "frarylunch":
+                    $('#table11').show(); break;
+                case "frarydinner":
+                    $('#table12').show(); break;
+                case "oldenborgbreak":
+                    $('#table20').show(); break;
+                case "oldenborglunch":
+                    $('#table21').show(); break;
+                case "oldenborgdinner":
+                    $('#table22').show(); break;
+                case "collinsbreak":
+                    $('#table30').show(); break;
+                case "collinslunch":
+                    $('#table31').show(); break;
                 case "collinsdinner":
-                    $('#table11').show(); break;             
+                    $('#table32').show(); break;
                 case "scrippsbreak":
-                    $('#table12').show(); break;             
+                    $('#table40').show(); break;
                 case "scrippslunch":
-                    $('#table13').show(); break;                    
+                    $('#table41').show(); break;
                 case "scrippsdinner":
-                    $('#table14').show(); break; 
+                    $('#table42').show(); break;
                 case "pitzerbreak":
-                    $('#table15').show(); break;            
+                    $('#table50').show(); break;
                 case "pitzerlunch":
-                    $('#table16').show(); break;                    
+                    $('#table51').show(); break;
                 case "pitzerdinner":
-                    $('#table17').show(); break;
+                    $('#table52').show(); break;
                 case "muddbreak":
-                    $('#table18').show(); break;             
+                    $('#table60').show(); break;
                 case "muddlunch":
-                    $('#table19').show(); break;                    
+                    $('#table61').show(); break;
                 case "mudddinner":
-                    $('#table20').show(); break;                                                 
+                    $('#table62').show(); break;
             }
         }
         currentTab = str;
