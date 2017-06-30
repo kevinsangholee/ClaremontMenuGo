@@ -4,17 +4,18 @@ import (
 	"gopkg.in/gin-gonic/gin.v1"
 	"net/http"
 	_ "github.com/go-sql-driver/mysql"
-	//"os"
-	//"log"
+
+	"os"
+	"log"
 )
 
 func main() {
 
-	//port := os.Getenv("PORT")
-	//
-	//if port == "" {
-	//	log.Fatal("$PORT must be set")
-	//}
+	port := os.Getenv("PORT")
+
+	if port == "" {
+		log.Fatal("$PORT must be set")
+	}
 
 	router := gin.Default()
 	router.LoadHTMLFiles("templates/index.html", "templates/foot.html", "templates/head.html", "templates/food_cell.html")
@@ -30,5 +31,5 @@ func main() {
 		})
 	})
 
-	router.Run(":8080")
+	router.Run(":" + port)
 }
