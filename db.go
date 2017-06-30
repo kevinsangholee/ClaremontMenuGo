@@ -8,13 +8,13 @@ import (
 )
 
 type FoodItem struct {
-	id   		 int
-	name 		 string
-	school		 int
-	image     	 string
-	review_count int
-	rating       float64
-	daily		 string
+	Id   		 int
+	Name 		 string
+	School		 int
+	Image     	 string
+	Review_count int
+	Rating       float64
+	Daily		 string
 }
 
 const (
@@ -28,7 +28,7 @@ const (
    1. Queries the foods database to check for any daily food
    2. Parses the rows returned into maps separated by schools and meals and returns the overarching map
  */
-func GetDaily() map[int]map[int][]*FoodItem {
+func GetDaily() map[string][]*FoodItem {
 
 	// Open Connection
 	dsn := DB_USER + ":" + DB_PASS + "@" + DB_HOST + "/" + DB_NAME
@@ -39,9 +39,12 @@ func GetDaily() map[int]map[int][]*FoodItem {
 	defer db.Close()
 
 	// Initialize
-	foodMap := make(map[int](map[int][]*FoodItem))
+	foodMap := make(map[string][]*FoodItem)
+
 	for i := 0; i < 7; i++ {
-		foodMap[i] = make(map[int][]*FoodItem)
+		for j := 0; j < 3; j++ {
+			foodMap[strconv.Itoa(i) + strconv.Itoa(j)] = make([]*FoodItem, 0)
+		}
 	}
 
 	// Querying daily
@@ -54,18 +57,14 @@ func GetDaily() map[int]map[int][]*FoodItem {
 	// Parsing rows by school and meal
 	for rows.Next() {
 		currFood := new(FoodItem)
-		err := rows.Scan(&currFood.id, &currFood.name, &currFood.school, &currFood.image,
-			&currFood.review_count, &currFood.rating, &currFood.daily)
+		err := rows.Scan(&currFood.Id, &currFood.Name, &currFood.School, &currFood.Image,
+			&currFood.Review_count, &currFood.Rating, &currFood.Daily)
 		if err != nil {
 			log.Fatal(err)
 		}
-		mealSlice := strings.Split(currFood.daily, "")
+		mealSlice := strings.Split(currFood.Daily, "")
 		for _ , val := range mealSlice {
-			mealInt, err := strconv.Atoi(val)
-			if err != nil {
-				log.Fatal(err)
-			}
-			foodMap[currFood.school][mealInt] = append(foodMap[currFood.school][mealInt], currFood)
+			foodMap[strconv.Itoa(currFood.School) + val] = append(foodMap[strconv.Itoa(currFood.School) + val], currFood)
 		}
 	}
 

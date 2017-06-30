@@ -20,28 +20,44 @@
             <button class="mealtab meal_middle" id="lunch">Lunch</button>
             <button class="mealtab meal_end" id="dinner">Dinner</button>
         </div>
-
-        <!--<% for(var i = 0; i < allFoodData.length; i++) { %>-->
-            <div class="menu_table" id="table0">
-                {{ template "templates/food_cell.html" }}
-                <!--<% allFoodData[i].forEach(function(food) { %>-->
-                    <!--<div class="food_cell" id="<%= food.id%>">-->
-                        <!--<img src=<%= food.image %> alt="image" class="food_image">-->
-                        <!--<h3 class="food_name"><span><%= food.name %></span></h3>-->
-                        <!--<div class="rating_stars"></div>-->
-                        <!--<h2 class="rating_number">(<%= food.rating %>/5)</h2>-->
-                    <!--</div>-->
-                    <!--<div class="reviews_cell">-->
-                    <!--</div>-->
-                <!--<% }); %>-->
-                <!--<% if(allFoodData[i].length == 0) { %>-->
-                    <!--<div class="empty_menu">-->
-                        <!--<img src = images/face.png">-->
-                        <!--<h1>Nothing on the menu for today!</h1>-->
-                    <!--</div>-->
-                <!--<% } %>-->
+        {{ range $key, $value := .foodData }}
+            <div class="menu_table" id="table{{ $key }}">
+            {{ if $value }}
+                {{ range $foodItem := $value }}
+                <div class="food_cell" id="{{ $foodItem.Id }}">
+                        {{ if eq $foodItem.Image "null" }}
+                            <img src="/img/noimage.png" alt="image" class="food_image">
+                        {{ else }}
+                            <img src="{{ $foodItem.Image }}" alt="image" class="food_image">
+                        {{ end }}
+                        <h3 class="food_name"><span>{{ $foodItem.Name }}</span></h3>
+                        <div class="rating_stars"></div>
+                        <h2 class="rating_number">({{ $foodItem.Rating }}/5)</h2>
+                    </div>
+                    <div class="reviews_cell">
+                    </div>
+                {{ end }}
+            {{ else }}
+                <div class="empty_menu">
+                    <img src = "/img/face.png">
+                    <h1>Nothing on the menu for today!</h1>
+                </div>
+            {{ end }}
             </div>
-        <!--<% }; %>-->
+        {{ end }}
+
+        <!--<% allFoodData[i].forEach(function(food) { %>-->
+            <!--<div class="food_cell" id="<%= food.id%>">-->
+                <!--<img src=<%= food.image %> alt="image" class="food_image">-->
+                <!--<h3 class="food_name"><span><%= food.name %></span></h3>-->
+                <!--<div class="rating_stars"></div>-->
+                <!--<h2 class="rating_number">(<%= food.rating %>/5)</h2>-->
+            <!--</div>-->
+            <!--<div class="reviews_cell">-->
+            <!--</div>-->
+        <!--<% }); %>-->
+
+
     </div>
 </div>
 

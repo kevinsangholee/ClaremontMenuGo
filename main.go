@@ -5,6 +5,7 @@ import (
 	"net/http"
 	_ "github.com/go-sql-driver/mysql"
 	//"os"
+	//"log"
 )
 
 func main() {
