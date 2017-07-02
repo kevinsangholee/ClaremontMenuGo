@@ -44,7 +44,7 @@ $(document).ready(function() {
                         $(foodCell).next().append(
                             "<div class='review_bubble'><div class='review_stars'></div>"
                             + "<h3>Created at: " + review.created_at + "</h3>"
-                            + "<h2>" + review.review_text + "</h2>"                            
+                            + "<h2>" + review.review_text + "</h2>"
                             + "</div>");
                         var star = $('.review_stars');
                         $(star).rateYo({

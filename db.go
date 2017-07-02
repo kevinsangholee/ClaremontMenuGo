@@ -17,6 +17,12 @@ type FoodItem struct {
 	Daily		 string
 }
 
+type ReviewItem struct {
+	Rating 	 	int    `json:"rating"`
+	Review_text string `json:"review_text"`
+	Created_at  string `json:"created_at"`
+}
+
 const (
 	DB_HOST = "tcp(jj820qt5lpu6krut.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306)"
 	DB_USER = "vc568j0frxncao3a"
@@ -28,15 +34,7 @@ const (
    1. Queries the foods database to check for any daily food
    2. Parses the rows returned into maps separated by schools and meals and returns the overarching map
  */
-func GetDaily() map[string][]*FoodItem {
-
-	// Open Connection
-	dsn := DB_USER + ":" + DB_PASS + "@" + DB_HOST + "/" + DB_NAME
-	db, err := sql.Open("mysql", dsn)
-	if err != nil {
-		log.Fatal(err)
-	}
-	defer db.Close()
+func GetDaily(db *sql.DB) map[string][]*FoodItem {
 
 	// Initialize
 	foodMap := make(map[string][]*FoodItem)
@@ -69,4 +67,25 @@ func GetDaily() map[string][]*FoodItem {
 	}
 
 	return foodMap
+}
+
+func GetReviews(db *sql.DB, foodID string) []*ReviewItem {
+
+	rows, err := db.Query("SELECT rating, review_text, created_at FROM reviews WHERE food_id = " +
+		foodID + " AND NOT (review_text = '')")
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	reviews := make([]*ReviewItem, 0)
+	for rows.Next() {
+		review := new(ReviewItem)
+		err := rows.Scan(&review.Rating, &review.Review_text, &review.Created_at)
+		if err != nil {
+			log.Fatal(err)
+		}
+		reviews = append(reviews, review)
+	}
+
+	return reviews
 }
