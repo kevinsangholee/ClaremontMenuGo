@@ -1,2 +1,2 @@
-web: ClaremontMenuGo
+web: CMenu
 worker: daily
