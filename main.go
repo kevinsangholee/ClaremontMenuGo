@@ -7,6 +7,7 @@ import (
 	"log"
 	"database/sql"
 	"os"
+	"time"
 )
 
 func main() {
@@ -17,6 +18,12 @@ func main() {
 		log.Fatal("$PORT must be set")
 	}
 
+	if len(os.Args) >= 2 && os.Args[1] == "daily" {
+		for {
+			log.Println("Working on daily...")
+			time.Sleep(time.Minute)
+		}
+	}
 	router := gin.Default()
 	router.LoadHTMLFiles("templates/index.html", "templates/foot.html", "templates/head.html", "templates/food_cell.html")
 	router.Static("/css", "./css")
