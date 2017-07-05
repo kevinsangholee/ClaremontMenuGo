@@ -6,6 +6,7 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 	"log"
 	"database/sql"
+	"github.com/kevinsangholee/ClaremontMenuGo"
 	"os"
 )
 
@@ -24,7 +25,7 @@ func main() {
 	router.Static("/img", "./img")
 
 	// Open Connection
-	dsn := DB_USER + ":" + DB_PASS + "@" + DB_HOST + "/" + DB_NAME
+	dsn := menudb.DB_USER + ":" + menudb.DB_PASS + "@" + menudb.DB_HOST + "/" + menudb.DB_NAME
 	db, err := sql.Open("mysql", dsn)
 	if err != nil {
 		log.Fatal(err)
@@ -32,7 +33,7 @@ func main() {
 	defer db.Close()
 
 	router.GET("/", func(c *gin.Context) {
-		foodMap := GetDaily(db)
+		foodMap := menudb.GetDaily(db)
 		c.HTML(http.StatusOK, "index.html", gin.H{
 			"foodData": foodMap,
 		})
@@ -40,7 +41,7 @@ func main() {
 
 	router.GET("/getReviews/:id", func(c *gin.Context) {
 		id := c.Param("id")
-		reviews := GetReviews(db, id)
+		reviews := menudb.GetReviews(db, id)
 		c.JSON(http.StatusOK, reviews)
 	})
 
