@@ -7,7 +7,6 @@ import (
 	"log"
 	"database/sql"
 	"os"
-	"time"
 )
 
 func main() {
