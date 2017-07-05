@@ -1,1 +1,2 @@
 web: ClaremontMenuGo
+worker: daily
