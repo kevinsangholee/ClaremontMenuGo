@@ -19,9 +19,8 @@ func main() {
 	}
 
 	if len(os.Args) >= 2 && os.Args[1] == "daily" {
-		for {
+		for i := 0; i < 10; i++ {
 			log.Println("Working on daily...")
-			time.Sleep(time.Minute)
 		}
 	} else {
 		router := gin.Default()
