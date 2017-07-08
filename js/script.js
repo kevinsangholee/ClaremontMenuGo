@@ -32,6 +32,10 @@ $(document).ready(function() {
         }
     });
 
+    $('.menu_table').each(function(i, menu) {
+        $(this).children('.food_cell').last().css("border-bottom", "1px solid #ccc");
+    });
+
     $('.food_cell').each(function(i, foodCell) {
         var foodID = $(foodCell).attr('id');
         $.ajax({
@@ -59,7 +63,7 @@ $(document).ready(function() {
                 }
             }
         })
-    })
+    });
 
     /*------------------------------------*/
     /*          Handling Clicks           */

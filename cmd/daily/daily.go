@@ -61,6 +61,12 @@ func main() {
 	log.Println("Database opened!")
 	defer db.Close()
 
+	// Reset daily
+	stmt, err := db.Prepare("UPDATE foods SET daily = '.'")
+	res, err := stmt.Exec()
+	num, err := res.RowsAffected()
+	log.Println("Reset daily for " + strconv.Itoa(int(num)) + " food items!")
+
 	// Iterate through each meal
 	for _, menuItem := range menus {
 		schoolInt := schoolToInt(menuItem.DiningHall)
@@ -73,12 +79,22 @@ func main() {
 			var daily string
 			var id int
 			err := row.Scan(&daily, &id)
+			// If it doesn't exist, add it to the database
 			if err != nil {
 				if err == sql.ErrNoRows {
-					daily = "DOESNT EXIST"
+					stmt, err := db.Prepare("INSERT INTO foods (name, school, image, daily) VALUES (?,?,'null',?)")
+					if err != nil {
+						log.Fatal(err)
+					}
+					_, err = stmt.Exec(foodName, schoolInt, "." + strconv.Itoa(mealInt))
+					if err != nil {
+						log.Fatal(err)
+					}
 				} else {
 					log.Fatal(err)
 				}
+				log.Println("Added new food " + foodName + "!")
+			// If it does exist, just update the daily
 			} else {
 				newDaily := daily + strconv.Itoa(mealInt)
 				stmt, err := db.Prepare("UPDATE foods SET daily = ? WHERE id = ?")
@@ -89,7 +105,7 @@ func main() {
 				if err != nil {
 					log.Fatal(err)
 				}
-				log.Println("Added " + foodName + " to daily!")
+				log.Println("Updated the daily for " + foodName + "!")
 			}
 		}
 	}
