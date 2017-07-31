@@ -7,15 +7,16 @@ import (
 	"log"
 	"database/sql"
 	"github.com/kevinsangholee/ClaremontMenuGo"
+	"os"
 )
 
 func main() {
 
-	//port := os.Getenv("PORT")
-	//
-	//if port == "" {
-	//	log.Fatal("$PORT must be set")
-	//}
+	port := os.Getenv("PORT")
+
+	if port == "" {
+		log.Fatal("$PORT must be set")
+	}
 
 	router := gin.Default()
 	router.LoadHTMLFiles("templates/index.html", "templates/foot.html", "templates/head.html", "templates/food_cell.html",
@@ -54,6 +55,6 @@ func main() {
 		c.JSON(http.StatusOK, reviews)
 	})
 
-	//router.Run(":" + port)
-	router.Run(":8080")
+	router.Run(":" + port)
+	//router.Run(":8080")
 }
