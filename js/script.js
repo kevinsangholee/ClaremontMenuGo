@@ -59,7 +59,7 @@ $(document).ready(function() {
                     });
 
                 } else {
-                    $(foodCell).next().append("<h1>No Reviews Yet.</h1>")
+                    $(foodCell).next().append("<h2 class='no_reviews'>No Reviews Yet. Add your own!</h2>")
                 }
             }
         })
@@ -103,42 +103,56 @@ $(document).ready(function() {
                     $('#table01').show(); break;
                 case "frankdinner":
                     $('#table02').show(); break;
+                case "frankbrunch":
+                    $('#table03').show(); break;
                 case "frarybreak":
                     $('#table10').show(); break;
                 case "frarylunch":
                     $('#table11').show(); break;
                 case "frarydinner":
                     $('#table12').show(); break;
+                case "frarybrunch":
+                    $('#table13').show(); break;
                 case "oldenborgbreak":
                     $('#table20').show(); break;
                 case "oldenborglunch":
                     $('#table21').show(); break;
                 case "oldenborgdinner":
                     $('#table22').show(); break;
+                case "oldenborgbrunch":
+                    $('#table23').show(); break;
                 case "collinsbreak":
                     $('#table30').show(); break;
                 case "collinslunch":
                     $('#table31').show(); break;
                 case "collinsdinner":
                     $('#table32').show(); break;
+                case "collinsbrunch":
+                    $('#table33').show(); break;
                 case "scrippsbreak":
                     $('#table40').show(); break;
                 case "scrippslunch":
                     $('#table41').show(); break;
                 case "scrippsdinner":
                     $('#table42').show(); break;
+                case "scrippsbrunch":
+                    $('#table43').show(); break;
                 case "pitzerbreak":
                     $('#table50').show(); break;
                 case "pitzerlunch":
                     $('#table51').show(); break;
                 case "pitzerdinner":
                     $('#table52').show(); break;
+                case "pitzerbrunch":
+                    $('#table53').show(); break;
                 case "muddbreak":
                     $('#table60').show(); break;
                 case "muddlunch":
                     $('#table61').show(); break;
                 case "mudddinner":
                     $('#table62').show(); break;
+                case "muddbrunch":
+                    $('#table63').show(); break;
             }
         }
         currentTab = str;

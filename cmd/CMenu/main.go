@@ -12,14 +12,15 @@ import (
 
 func main() {
 
-		port := os.Getenv("PORT")
+	port := os.Getenv("PORT")
 
-		if port == "" {
-			log.Fatal("$PORT must be set")
-		}
+	if port == "" {
+		log.Fatal("$PORT must be set")
+	}
 
 	router := gin.Default()
-	router.LoadHTMLFiles("templates/index.html", "templates/foot.html", "templates/head.html", "templates/food_cell.html")
+	router.LoadHTMLFiles("templates/index.html", "templates/foot.html", "templates/head.html", "templates/food_cell.html",
+						       "templates/index_weekend.html")
 	router.Static("/css", "./css")
 	router.Static("/js", "./js")
 	router.Static("/img", "./img")
@@ -32,12 +33,21 @@ func main() {
 	}
 	defer db.Close()
 
-	router.GET("/", func(c *gin.Context) {
-		foodMap := menudb.GetDaily(db)
-		c.HTML(http.StatusOK, "index.html", gin.H{
-			"foodData": foodMap,
+	if(!menudb.IsWeekend()) {
+		router.GET("/", func(c *gin.Context) {
+			foodMap := menudb.GetDaily(db)
+			c.HTML(http.StatusOK, "index.html", gin.H{
+				"foodData": foodMap,
+			})
 		})
-	})
+	} else {
+		router.GET("/", func(c *gin.Context) {
+			foodMap := menudb.GetDaily(db)
+			c.HTML(http.StatusOK, "index_weekend.html", gin.H{
+				"foodData": foodMap,
+			})
+		})
+	}
 
 	router.GET("/getReviews/:id", func(c *gin.Context) {
 		id := c.Param("id")

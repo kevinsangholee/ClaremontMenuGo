@@ -25,6 +25,11 @@ body {
     padding: 0em 2.2em;
 }
 
+h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 /* Main top part */
 
 #logo {
@@ -46,7 +51,6 @@ body {
 
 .menu_div {
     padding: 0;
-    background-color: red;
     margin-bottom: 100px;
     position: relative;
 }
@@ -121,7 +125,6 @@ div.tabs button.active {
     padding: 0;
     width: 100%;
     position: relative;
-    background-color: orange;
 }
 
 .food_cell {
@@ -218,10 +221,6 @@ div.tabs button.active {
     width: 150px;
 }
 
-.reviews_cell {
-    background-color: #CCC;
-}
-
 .review_bubble h2, .review_bubble h3 {
     font-family: 'Open-Sans', sans-serif;
     font-weight: 300;
@@ -254,4 +253,13 @@ div.tabs button.active {
 .review_bubble .review_stars {
     padding: 0;
     display: inline-block;
+}
+
+.no_reviews {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+}
+
+.reviews_cell {
+    background-color: #FFF7E6;
 }

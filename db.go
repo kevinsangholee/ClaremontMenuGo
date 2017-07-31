@@ -5,6 +5,7 @@ import (
 	"strings"
 	"database/sql"
 	"strconv"
+	"time"
 )
 
 type FoodItem struct {
@@ -39,9 +40,16 @@ func GetDaily(db *sql.DB) map[string][]*FoodItem {
 	// Initialize
 	foodMap := make(map[string][]*FoodItem)
 
+
 	for i := 0; i < 7; i++ {
-		for j := 0; j < 3; j++ {
-			foodMap[strconv.Itoa(i) + strconv.Itoa(j)] = make([]*FoodItem, 0)
+		if (!IsWeekend()) {
+			for j := 0; j < 3; j++ {
+				foodMap[strconv.Itoa(i)+strconv.Itoa(j)] = make([]*FoodItem, 0)
+			}
+		} else {
+			for j := 2; j <= 3; j++ {
+				foodMap[strconv.Itoa(i)+strconv.Itoa(j)] = make([]*FoodItem, 0)
+			}
 		}
 	}
 
@@ -88,4 +96,9 @@ func GetReviews(db *sql.DB, foodID string) []*ReviewItem {
 	}
 
 	return reviews
+}
+
+func IsWeekend() bool {
+	t := time.Now().Weekday()
+	return t == 0 || t == 6
 }
