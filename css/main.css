@@ -6,6 +6,29 @@ body {
     margin: 0;
 }
 
+header {
+    text-align: center;
+}
+
+header a {
+    display: inline-block;
+    margin: -20px auto 0 auto;
+}
+
+header a img {
+    width: 250px;
+    height: auto;
+    display: inline-block;
+}
+
+#play_store_badge {
+    width: 270px;
+}
+
+#app_store_badge {
+    width: 240px;
+}
+
 /* Overriding */
 
 .ui-accordion-header:focus {
