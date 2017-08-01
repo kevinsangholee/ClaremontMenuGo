@@ -8,6 +8,7 @@ import (
 	"database/sql"
 	"github.com/kevinsangholee/ClaremontMenuGo"
 	"os"
+	"strconv"
 )
 
 func main() {
@@ -76,9 +77,9 @@ func main() {
 		review_text := c.PostForm("review_text")
 		created_at := c.PostForm("created_at")
 
-		log.Printf("%s %s %s %s %s", food_id, user_id, rating, review_text, created_at)
+		review_id := menudb.AddReview(db, food_id, user_id, rating, review_text, created_at)
 
-		c.String(http.StatusOK, "Review added!")
+		c.String(http.StatusOK, strconv.Itoa(int(review_id)))
 	})
 
 	router.Run(":" + port)
