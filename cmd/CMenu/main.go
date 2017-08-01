@@ -91,6 +91,17 @@ func main() {
 		c.String(http.StatusOK, "Review deleted!")
 	})
 
+	router.POST("/updateReview", func(c *gin.Context) {
+		review_id := c.PostForm("review_id")
+		rating := c.PostForm("rating")
+		review_text := c.PostForm("review_text")
+		created_at := c.PostForm("created_at")
+
+		menudb.UpdateReview(db, review_id, rating, review_text, created_at)
+
+		c.String(http.StatusOK, "Review updated!")
+	})
+
 	router.Run(":" + port)
 	//router.Run(":8080")
 }

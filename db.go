@@ -233,6 +233,49 @@ func DeleteReview(db *sql.DB, review_id string, food_id string) {
 }
 
 /*
+	This function takes care of updating a review and updating the average count and what not
+ */
+func UpdateReview(db *sql.DB, review_id string, rating string, review_text string, created_at string) {
+	// Get food_id and current rating from the review to update
+	row := db.QueryRow("SELECT food_id, rating FROM reviews WHERE review_id = " + review_id)
+	var food_id int
+	var old_rating int
+	row.Scan(&food_id, &old_rating)
+
+	// Get current review coutn and score from foods table
+	row = db.QueryRow("SELECT review_count, total_score FROM foods WHERE id = " + strconv.Itoa(food_id))
+	var review_count int
+	var total_score int
+	row.Scan(&review_count, &total_score)
+
+	// Calculate new average
+	parsedRating, _ := strconv.ParseInt(rating, 10, 64)
+	total_score = total_score - old_rating + int(parsedRating)
+	new_average := strconv.FormatFloat(float64(total_score) / float64(review_count), 'E', 2, 64)
+
+	// Update foods table
+	stmt, err := db.Prepare("UPDATE foods SET total_score = ?, rating = ? WHERE id = ?")
+	if err != nil {
+		log.Fatal(err)
+	}
+	_, err = stmt.Exec(total_score, new_average, food_id)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	// Update reviews table
+	stmt, err = db.Prepare("UPDATE reviews SET rating = ?, review_text = ?, created_at = ? WHERE id = ?")
+	if err != nil {
+		log.Fatal(err)
+	}
+	_, err = stmt.Exec(rating, review_text, created_at, review_id)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+}
+
+/*
 	Checks to see if it is a weekend so that the website can render the proper menu
  */
 func IsWeekend() bool {
