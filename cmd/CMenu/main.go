@@ -69,6 +69,18 @@ func main() {
 		c.JSON(http.StatusOK, food)
 	})
 
+	router.POST("/addReview", func(c *gin.Context) {
+		food_id := c.PostForm("food_id")
+		user_id := c.PostForm("user_id")
+		rating := c.PostForm("rating")
+		review_text := c.PostForm("review_text")
+		created_at := c.PostForm("created_at")
+
+		log.Printf("%s %s %s %s %s", food_id, user_id, rating, review_text, created_at)
+
+		c.String(http.StatusOK, "Review added!")
+	})
+
 	router.Run(":" + port)
 	//router.Run(":8080")
 }
