@@ -63,6 +63,12 @@ func main() {
 		c.JSON(http.StatusOK, foods)
 	})
 
+	router.GET("/getSingleFood/:id", func(c *gin.Context) {
+		id := c.Param("id")
+		food := menudb.GetSingleFood(db, id)
+		c.JSON(http.StatusOK, food)
+	})
+
 	router.Run(":" + port)
 	//router.Run(":8080")
 }

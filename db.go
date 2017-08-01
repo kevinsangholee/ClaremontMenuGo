@@ -124,6 +124,16 @@ func GetMeal(db *sql.DB, school string, meal string) []*FoodItem {
 
 }
 
+func GetSingleFood(db *sql.DB, id string) *FoodItem {
+	food := new(FoodItem)
+	row := db.QueryRow("SELECT id, name, school, image, review_count, rating FROM foods WHERE id = " + id)
+	err := row.Scan(&food.Id, &food.Name, &food.School, &food.Image, &food.Review_count, &food.Rating)
+	if err != nil {
+		log.Fatal(err)
+	}
+	return food
+}
+
 func IsWeekend() bool {
 	t := time.Now().Weekday()
 	return t == 0 || t == 6

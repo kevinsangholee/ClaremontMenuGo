@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="875173a0-369b-4419-98c9-79beefd4c2c7" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmd/CMenu/main.go" afterPath="$PROJECT_DIR$/cmd/CMenu/main.go" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.go" afterPath="$PROJECT_DIR$/db.go" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,8 +18,8 @@
       <file leaf-file-name="main.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cmd/CMenu/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-422">
-              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="18" selection-end-column="5" />
+            <state relative-caret-position="364">
+              <caret line="69" column="6" lean-forward="true" selection-start-line="69" selection-start-column="6" selection-end-line="69" selection-end-column="6" />
               <folding>
                 <element signature="e#14#175#0" expanded="true" />
               </folding>
@@ -29,16 +30,18 @@
       <file leaf-file-name="db.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="92" column="59" lean-forward="false" selection-start-line="92" selection-start-column="59" selection-end-line="92" selection-end-column="59" />
+            <state relative-caret-position="275">
+              <caret line="132" column="5" lean-forward="false" selection-start-line="132" selection-start-column="5" selection-end-line="132" selection-end-column="5" />
               <folding>
                 <element signature="e#16#79#0" expanded="true" />
-                <marker date="1501612811000" expanded="true" signature="1229:1236" ph="SELECT name daily" />
-                <marker date="1501612811000" expanded="true" signature="1229:1294" ph="SELECT * FRO... daily" />
-                <marker date="1501612811000" expanded="true" signature="1229:1315" ph="SELECT id, n... foods" />
-                <marker date="1501612811000" expanded="true" signature="1229:1318" ph="SELECT id, n... foods" />
-                <marker date="1501612811000" expanded="true" signature="1960:2045" ph="SELECT * FRO... reviews" />
-                <marker date="1501612811000" expanded="true" signature="1960:2089" ph="SELECT * FRO... reviews" />
+                <marker date="1501613919000" expanded="true" signature="1229:1236" ph="SELECT name daily" />
+                <marker date="1501613919000" expanded="true" signature="1229:1294" ph="SELECT * FRO... daily" />
+                <marker date="1501613919000" expanded="true" signature="1229:1315" ph="SELECT id, n... foods" />
+                <marker date="1501613919000" expanded="true" signature="1229:1318" ph="SELECT id, n... foods" />
+                <marker date="1501613919000" expanded="true" signature="1960:2045" ph="SELECT * FRO... reviews" />
+                <marker date="1501613919000" expanded="true" signature="1960:2089" ph="SELECT * FRO... reviews" />
+                <marker date="1501613919000" expanded="true" signature="3096:3134" ph="SELECT id, n... " />
+                <marker date="1501613919000" expanded="true" signature="3096:3170" ph="SELECT id, n... foods" />
               </folding>
             </state>
           </provider>
@@ -165,8 +168,8 @@
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/cmd/daily/daily.go" />
-        <option value="$PROJECT_DIR$/cmd/CMenu/main.go" />
         <option value="$PROJECT_DIR$/db.go" />
+        <option value="$PROJECT_DIR$/cmd/CMenu/main.go" />
       </list>
     </option>
   </component>
@@ -535,12 +538,14 @@
           <caret line="51" column="5" lean-forward="false" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
           <folding>
             <element signature="e#16#79#0" expanded="true" />
-            <marker date="1501612811000" expanded="true" signature="1229:1236" ph="SELECT name daily" />
-            <marker date="1501612811000" expanded="true" signature="1229:1294" ph="SELECT * FRO... daily" />
-            <marker date="1501612811000" expanded="true" signature="1229:1315" ph="SELECT id, n... foods" />
-            <marker date="1501612811000" expanded="true" signature="1229:1318" ph="SELECT id, n... foods" />
-            <marker date="1501612811000" expanded="true" signature="1960:2045" ph="SELECT * FRO... reviews" />
-            <marker date="1501612811000" expanded="true" signature="1960:2089" ph="SELECT * FRO... reviews" />
+            <marker date="1501613919000" expanded="true" signature="1229:1236" ph="SELECT name daily" />
+            <marker date="1501613919000" expanded="true" signature="1229:1294" ph="SELECT * FRO... daily" />
+            <marker date="1501613919000" expanded="true" signature="1229:1315" ph="SELECT id, n... foods" />
+            <marker date="1501613919000" expanded="true" signature="1229:1318" ph="SELECT id, n... foods" />
+            <marker date="1501613919000" expanded="true" signature="1960:2045" ph="SELECT * FRO... reviews" />
+            <marker date="1501613919000" expanded="true" signature="1960:2089" ph="SELECT * FRO... reviews" />
+            <marker date="1501613919000" expanded="true" signature="3096:3134" ph="SELECT id, n... " />
+            <marker date="1501613919000" expanded="true" signature="3096:3170" ph="SELECT id, n... foods" />
           </folding>
         </state>
       </provider>
@@ -607,12 +612,14 @@
           <caret line="51" column="5" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
           <folding>
             <element signature="e#16#79#0" expanded="true" />
-            <marker date="1501612811000" expanded="true" signature="1229:1236" ph="SELECT name daily" />
-            <marker date="1501612811000" expanded="true" signature="1229:1294" ph="SELECT * FRO... daily" />
-            <marker date="1501612811000" expanded="true" signature="1229:1315" ph="SELECT id, n... foods" />
-            <marker date="1501612811000" expanded="true" signature="1229:1318" ph="SELECT id, n... foods" />
-            <marker date="1501612811000" expanded="true" signature="1960:2045" ph="SELECT * FRO... reviews" />
-            <marker date="1501612811000" expanded="true" signature="1960:2089" ph="SELECT * FRO... reviews" />
+            <marker date="1501613919000" expanded="true" signature="1229:1236" ph="SELECT name daily" />
+            <marker date="1501613919000" expanded="true" signature="1229:1294" ph="SELECT * FRO... daily" />
+            <marker date="1501613919000" expanded="true" signature="1229:1315" ph="SELECT id, n... foods" />
+            <marker date="1501613919000" expanded="true" signature="1229:1318" ph="SELECT id, n... foods" />
+            <marker date="1501613919000" expanded="true" signature="1960:2045" ph="SELECT * FRO... reviews" />
+            <marker date="1501613919000" expanded="true" signature="1960:2089" ph="SELECT * FRO... reviews" />
+            <marker date="1501613919000" expanded="true" signature="3096:3134" ph="SELECT id, n... " />
+            <marker date="1501613919000" expanded="true" signature="3096:3170" ph="SELECT id, n... foods" />
           </folding>
         </state>
       </provider>
@@ -698,12 +705,14 @@
           <caret line="90" column="1" lean-forward="true" selection-start-line="90" selection-start-column="1" selection-end-line="90" selection-end-column="1" />
           <folding>
             <element signature="e#16#79#0" expanded="true" />
-            <marker date="1501612811000" expanded="true" signature="1229:1236" ph="SELECT name daily" />
-            <marker date="1501612811000" expanded="true" signature="1229:1294" ph="SELECT * FRO... daily" />
-            <marker date="1501612811000" expanded="true" signature="1229:1315" ph="SELECT id, n... foods" />
-            <marker date="1501612811000" expanded="true" signature="1229:1318" ph="SELECT id, n... foods" />
-            <marker date="1501612811000" expanded="true" signature="1960:2045" ph="SELECT * FRO... reviews" />
-            <marker date="1501612811000" expanded="true" signature="1960:2089" ph="SELECT * FRO... reviews" />
+            <marker date="1501613919000" expanded="true" signature="1229:1236" ph="SELECT name daily" />
+            <marker date="1501613919000" expanded="true" signature="1229:1294" ph="SELECT * FRO... daily" />
+            <marker date="1501613919000" expanded="true" signature="1229:1315" ph="SELECT id, n... foods" />
+            <marker date="1501613919000" expanded="true" signature="1229:1318" ph="SELECT id, n... foods" />
+            <marker date="1501613919000" expanded="true" signature="1960:2045" ph="SELECT * FRO... reviews" />
+            <marker date="1501613919000" expanded="true" signature="1960:2089" ph="SELECT * FRO... reviews" />
+            <marker date="1501613919000" expanded="true" signature="3096:3134" ph="SELECT id, n... " />
+            <marker date="1501613919000" expanded="true" signature="3096:3170" ph="SELECT id, n... foods" />
           </folding>
         </state>
       </provider>
@@ -769,12 +778,14 @@
           <caret line="71" column="1" lean-forward="true" selection-start-line="71" selection-start-column="1" selection-end-line="71" selection-end-column="1" />
           <folding>
             <element signature="e#16#79#0" expanded="true" />
-            <marker date="1501612811000" expanded="true" signature="1229:1236" ph="SELECT name daily" />
-            <marker date="1501612811000" expanded="true" signature="1229:1294" ph="SELECT * FRO... daily" />
-            <marker date="1501612811000" expanded="true" signature="1229:1315" ph="SELECT id, n... foods" />
-            <marker date="1501612811000" expanded="true" signature="1229:1318" ph="SELECT id, n... foods" />
-            <marker date="1501612811000" expanded="true" signature="1960:2045" ph="SELECT * FRO... reviews" />
-            <marker date="1501612811000" expanded="true" signature="1960:2089" ph="SELECT * FRO... reviews" />
+            <marker date="1501613919000" expanded="true" signature="1229:1236" ph="SELECT name daily" />
+            <marker date="1501613919000" expanded="true" signature="1229:1294" ph="SELECT * FRO... daily" />
+            <marker date="1501613919000" expanded="true" signature="1229:1315" ph="SELECT id, n... foods" />
+            <marker date="1501613919000" expanded="true" signature="1229:1318" ph="SELECT id, n... foods" />
+            <marker date="1501613919000" expanded="true" signature="1960:2045" ph="SELECT * FRO... reviews" />
+            <marker date="1501613919000" expanded="true" signature="1960:2089" ph="SELECT * FRO... reviews" />
+            <marker date="1501613919000" expanded="true" signature="3096:3134" ph="SELECT id, n... " />
+            <marker date="1501613919000" expanded="true" signature="3096:3170" ph="SELECT id, n... foods" />
           </folding>
         </state>
       </provider>
@@ -942,22 +953,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="92" column="59" lean-forward="false" selection-start-line="92" selection-start-column="59" selection-end-line="92" selection-end-column="59" />
-          <folding>
-            <element signature="e#16#79#0" expanded="true" />
-            <marker date="1501612811000" expanded="true" signature="1229:1236" ph="SELECT name daily" />
-            <marker date="1501612811000" expanded="true" signature="1229:1294" ph="SELECT * FRO... daily" />
-            <marker date="1501612811000" expanded="true" signature="1229:1315" ph="SELECT id, n... foods" />
-            <marker date="1501612811000" expanded="true" signature="1229:1318" ph="SELECT id, n... foods" />
-            <marker date="1501612811000" expanded="true" signature="1960:2045" ph="SELECT * FRO... reviews" />
-            <marker date="1501612811000" expanded="true" signature="1960:2089" ph="SELECT * FRO... reviews" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cmd/daily/daily.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -974,10 +969,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/db.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="132" column="5" lean-forward="false" selection-start-line="132" selection-start-column="5" selection-end-line="132" selection-end-column="5" />
+          <folding>
+            <element signature="e#16#79#0" expanded="true" />
+            <marker date="1501613919000" expanded="true" signature="1229:1236" ph="SELECT name daily" />
+            <marker date="1501613919000" expanded="true" signature="1229:1294" ph="SELECT * FRO... daily" />
+            <marker date="1501613919000" expanded="true" signature="1229:1315" ph="SELECT id, n... foods" />
+            <marker date="1501613919000" expanded="true" signature="1229:1318" ph="SELECT id, n... foods" />
+            <marker date="1501613919000" expanded="true" signature="1960:2045" ph="SELECT * FRO... reviews" />
+            <marker date="1501613919000" expanded="true" signature="1960:2089" ph="SELECT * FRO... reviews" />
+            <marker date="1501613919000" expanded="true" signature="3096:3134" ph="SELECT id, n... " />
+            <marker date="1501613919000" expanded="true" signature="3096:3170" ph="SELECT id, n... foods" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cmd/CMenu/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-422">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="18" selection-end-column="5" />
+        <state relative-caret-position="364">
+          <caret line="69" column="6" lean-forward="true" selection-start-line="69" selection-start-column="6" selection-end-line="69" selection-end-column="6" />
           <folding>
             <element signature="e#14#175#0" expanded="true" />
           </folding>
