@@ -242,7 +242,7 @@ func UpdateReview(db *sql.DB, review_id string, rating string, review_text strin
 	var old_rating int
 	row.Scan(&food_id, &old_rating)
 
-	// Get current review coutn and score from foods table
+	// Get current review count and score from foods table
 	row = db.QueryRow("SELECT review_count, total_score FROM foods WHERE id = " + strconv.Itoa(food_id))
 	var review_count int
 	var total_score int
@@ -252,6 +252,8 @@ func UpdateReview(db *sql.DB, review_id string, rating string, review_text strin
 	parsedRating, _ := strconv.ParseInt(rating, 10, 64)
 	total_score = total_score - old_rating + int(parsedRating)
 	new_average := strconv.FormatFloat(float64(total_score) / float64(review_count), 'E', 2, 64)
+	log.Println("New calculated average: " + new_average)
+	log.Println("New total score: " + strconv.Itoa(total_score))
 
 	// Update foods table
 	stmt, err := db.Prepare("UPDATE foods SET total_score = ?, rating = ? WHERE id = ?")
