@@ -172,7 +172,8 @@ func AddReview(db *sql.DB, food_id string, user_id string, rating string, review
 
 	// Increment review count and total score
 	review_count += 1
-	total_score += int(strconv.ParseInt(rating, 10, 32))
+	parsedRating, _ := strconv.ParseInt(rating, 10, 64)
+	total_score += int(parsedRating)
 
 	// Calculate new average
 	new_average := strconv.FormatFloat(float64(total_score) / float64(review_count), 'E', 2, 64)

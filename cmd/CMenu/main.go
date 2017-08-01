@@ -7,8 +7,8 @@ import (
 	"log"
 	"database/sql"
 	"github.com/kevinsangholee/ClaremontMenuGo"
-	"os"
 	"strconv"
+	"os"
 )
 
 func main() {
