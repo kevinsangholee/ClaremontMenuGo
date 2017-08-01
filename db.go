@@ -19,6 +19,8 @@ type FoodItem struct {
 }
 
 type ReviewItem struct {
+	Food_id		int	   `json:"food_id"`
+	User_id		string `json:"user_id"`
 	Rating 	 	int    `json:"rating"`
 	Review_text string `json:"review_text"`
 	Created_at  string `json:"created_at"`
@@ -79,7 +81,7 @@ func GetDaily(db *sql.DB) map[string][]*FoodItem {
 
 func GetReviews(db *sql.DB, foodID string) []*ReviewItem {
 
-	rows, err := db.Query("SELECT rating, review_text, created_at FROM reviews WHERE food_id = " +
+	rows, err := db.Query("SELECT food_id, user_id, rating, review_text, created_at FROM reviews WHERE food_id = " +
 		foodID + " AND NOT (review_text = '')")
 	if err != nil {
 		log.Fatal(err)
@@ -88,7 +90,7 @@ func GetReviews(db *sql.DB, foodID string) []*ReviewItem {
 	reviews := make([]*ReviewItem, 0)
 	for rows.Next() {
 		review := new(ReviewItem)
-		err := rows.Scan(&review.Rating, &review.Review_text, &review.Created_at)
+		err := rows.Scan(&review.Food_id, &review.User_id, &review.Rating, &review.Review_text, &review.Created_at)
 		if err != nil {
 			log.Fatal(err)
 		}
