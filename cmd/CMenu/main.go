@@ -82,6 +82,15 @@ func main() {
 		c.String(http.StatusOK, strconv.Itoa(int(review_id)))
 	})
 
+	router.POST("/deleteReview", func(c *gin.Context) {
+		review_id := c.PostForm("review_id")
+		food_id := c.PostForm("food_id")
+
+		menudb.DeleteReview(db, review_id, food_id)
+
+		c.String(http.StatusOK, "Review deleted!")
+	})
+
 	router.Run(":" + port)
 	//router.Run(":8080")
 }

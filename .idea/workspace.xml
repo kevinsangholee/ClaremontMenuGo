@@ -18,8 +18,8 @@
       <file leaf-file-name="main.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cmd/CMenu/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1290">
-              <caret line="86" column="1" lean-forward="true" selection-start-line="86" selection-start-column="1" selection-end-line="86" selection-end-column="1" />
+            <state relative-caret-position="398">
+              <caret line="93" column="26" lean-forward="true" selection-start-line="93" selection-start-column="26" selection-end-line="93" selection-end-column="26" />
               <folding>
                 <element signature="e#14#186#0" expanded="true" />
               </folding>
@@ -30,25 +30,33 @@
       <file leaf-file-name="db.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="175" column="36" lean-forward="false" selection-start-line="175" selection-start-column="36" selection-end-line="175" selection-end-column="36" />
+            <state relative-caret-position="381">
+              <caret line="231" column="5" lean-forward="false" selection-start-line="231" selection-start-column="5" selection-end-line="231" selection-end-column="5" />
               <folding>
                 <element signature="e#16#79#0" expanded="true" />
-                <marker date="1501626617000" expanded="true" signature="1229:1236" ph="SELECT name daily" />
-                <marker date="1501626617000" expanded="true" signature="1229:1294" ph="SELECT * FRO... daily" />
-                <marker date="1501626617000" expanded="true" signature="1229:1315" ph="SELECT id, n... foods" />
-                <marker date="1501626617000" expanded="true" signature="1229:1318" ph="SELECT id, n... foods" />
-                <marker date="1501626617000" expanded="true" signature="2028:2113" ph="SELECT * FRO... reviews" />
-                <marker date="1501626617000" expanded="true" signature="2028:2157" ph="SELECT * FRO... reviews" />
-                <marker date="1501626617000" expanded="true" signature="3419:3457" ph="SELECT id, n... " />
-                <marker date="1501626617000" expanded="true" signature="3419:3493" ph="SELECT id, n... foods" />
-                <marker date="1501626617000" expanded="true" signature="3892:3989" ph="INSERT INTO reviews... " />
-                <marker date="1501626617000" expanded="true" signature="4366:4420" ph="SELECT revie... foods" />
-                <marker date="1501626617000" expanded="true" signature="4889:4905" ph="UPDATE foods... " />
-                <marker date="1501626617000" expanded="true" signature="4889:4912" ph="UPDATE foods... " />
-                <marker date="1501626617000" expanded="true" signature="4889:4929" ph="UPDATE foods... " />
-                <marker date="1501626617000" expanded="true" signature="4889:4938" ph="UPDATE foods... " />
-                <marker date="1501626617000" expanded="true" signature="4889:4964" ph="UPDATE foods... " />
+                <marker date="1501628041000" expanded="true" signature="1229:1236" ph="SELECT name daily" />
+                <marker date="1501628041000" expanded="true" signature="1229:1294" ph="SELECT * FRO... daily" />
+                <marker date="1501628041000" expanded="true" signature="1229:1315" ph="SELECT id, n... foods" />
+                <marker date="1501628041000" expanded="true" signature="1229:1318" ph="SELECT id, n... foods" />
+                <marker date="1501628041000" expanded="true" signature="2028:2113" ph="SELECT * FRO... reviews" />
+                <marker date="1501628041000" expanded="true" signature="2028:2157" ph="SELECT * FRO... reviews" />
+                <marker date="1501628041000" expanded="true" signature="3419:3457" ph="SELECT id, n... " />
+                <marker date="1501628041000" expanded="true" signature="3419:3493" ph="SELECT id, n... foods" />
+                <marker date="1501628041000" expanded="true" signature="3892:3989" ph="INSERT INTO reviews... " />
+                <marker date="1501628041000" expanded="true" signature="4366:4420" ph="SELECT revie... foods" />
+                <marker date="1501628041000" expanded="true" signature="4886:4902" ph="UPDATE foods... " />
+                <marker date="1501628041000" expanded="true" signature="4886:4909" ph="UPDATE foods... " />
+                <marker date="1501628041000" expanded="true" signature="4886:4926" ph="UPDATE foods... " />
+                <marker date="1501628041000" expanded="true" signature="4886:4935" ph="UPDATE foods... " />
+                <marker date="1501628041000" expanded="true" signature="4886:4961" ph="UPDATE foods... " />
+                <marker date="1501628041000" expanded="true" signature="5378:5413" ph="SELECT ratin... reviews" />
+                <marker date="1501628041000" expanded="true" signature="5378:5415" ph="SELECT ratin... reviews" />
+                <marker date="1501628041000" expanded="true" signature="5378:5430" ph="SELECT ratin... reviews" />
+                <marker date="1501628041000" expanded="true" signature="5557:5589" ph="SELECT revie... " />
+                <marker date="1501628041000" expanded="true" signature="5557:5611" ph="SELECT revie... foods" />
+                <marker date="1501628041000" expanded="true" signature="6013:6081" ph="UPDATE foods... " />
+                <marker date="1501628041000" expanded="true" signature="6013:6088" ph="UPDATE foods... " />
+                <marker date="1501628041000" expanded="true" signature="6310:6342" ph="DELETE FROM " />
               </folding>
             </state>
           </provider>
@@ -175,8 +183,8 @@
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/cmd/daily/daily.go" />
-        <option value="$PROJECT_DIR$/db.go" />
         <option value="$PROJECT_DIR$/cmd/CMenu/main.go" />
+        <option value="$PROJECT_DIR$/db.go" />
       </list>
     </option>
   </component>
@@ -482,7 +490,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22556391" sideWeight="0.39166668" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.336" sideWeight="0.60833335" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.336" sideWeight="0.60833335" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -545,21 +553,29 @@
           <caret line="51" column="5" lean-forward="false" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
           <folding>
             <element signature="e#16#79#0" expanded="true" />
-            <marker date="1501626617000" expanded="true" signature="1229:1236" ph="SELECT name daily" />
-            <marker date="1501626617000" expanded="true" signature="1229:1294" ph="SELECT * FRO... daily" />
-            <marker date="1501626617000" expanded="true" signature="1229:1315" ph="SELECT id, n... foods" />
-            <marker date="1501626617000" expanded="true" signature="1229:1318" ph="SELECT id, n... foods" />
-            <marker date="1501626617000" expanded="true" signature="2028:2113" ph="SELECT * FRO... reviews" />
-            <marker date="1501626617000" expanded="true" signature="2028:2157" ph="SELECT * FRO... reviews" />
-            <marker date="1501626617000" expanded="true" signature="3419:3457" ph="SELECT id, n... " />
-            <marker date="1501626617000" expanded="true" signature="3419:3493" ph="SELECT id, n... foods" />
-            <marker date="1501626617000" expanded="true" signature="3892:3989" ph="INSERT INTO reviews... " />
-            <marker date="1501626617000" expanded="true" signature="4366:4420" ph="SELECT revie... foods" />
-            <marker date="1501626617000" expanded="true" signature="4889:4905" ph="UPDATE foods... " />
-            <marker date="1501626617000" expanded="true" signature="4889:4912" ph="UPDATE foods... " />
-            <marker date="1501626617000" expanded="true" signature="4889:4929" ph="UPDATE foods... " />
-            <marker date="1501626617000" expanded="true" signature="4889:4938" ph="UPDATE foods... " />
-            <marker date="1501626617000" expanded="true" signature="4889:4964" ph="UPDATE foods... " />
+            <marker date="1501628041000" expanded="true" signature="1229:1236" ph="SELECT name daily" />
+            <marker date="1501628041000" expanded="true" signature="1229:1294" ph="SELECT * FRO... daily" />
+            <marker date="1501628041000" expanded="true" signature="1229:1315" ph="SELECT id, n... foods" />
+            <marker date="1501628041000" expanded="true" signature="1229:1318" ph="SELECT id, n... foods" />
+            <marker date="1501628041000" expanded="true" signature="2028:2113" ph="SELECT * FRO... reviews" />
+            <marker date="1501628041000" expanded="true" signature="2028:2157" ph="SELECT * FRO... reviews" />
+            <marker date="1501628041000" expanded="true" signature="3419:3457" ph="SELECT id, n... " />
+            <marker date="1501628041000" expanded="true" signature="3419:3493" ph="SELECT id, n... foods" />
+            <marker date="1501628041000" expanded="true" signature="3892:3989" ph="INSERT INTO reviews... " />
+            <marker date="1501628041000" expanded="true" signature="4366:4420" ph="SELECT revie... foods" />
+            <marker date="1501628041000" expanded="true" signature="4886:4902" ph="UPDATE foods... " />
+            <marker date="1501628041000" expanded="true" signature="4886:4909" ph="UPDATE foods... " />
+            <marker date="1501628041000" expanded="true" signature="4886:4926" ph="UPDATE foods... " />
+            <marker date="1501628041000" expanded="true" signature="4886:4935" ph="UPDATE foods... " />
+            <marker date="1501628041000" expanded="true" signature="4886:4961" ph="UPDATE foods... " />
+            <marker date="1501628041000" expanded="true" signature="5378:5413" ph="SELECT ratin... reviews" />
+            <marker date="1501628041000" expanded="true" signature="5378:5415" ph="SELECT ratin... reviews" />
+            <marker date="1501628041000" expanded="true" signature="5378:5430" ph="SELECT ratin... reviews" />
+            <marker date="1501628041000" expanded="true" signature="5557:5589" ph="SELECT revie... " />
+            <marker date="1501628041000" expanded="true" signature="5557:5611" ph="SELECT revie... foods" />
+            <marker date="1501628041000" expanded="true" signature="6013:6081" ph="UPDATE foods... " />
+            <marker date="1501628041000" expanded="true" signature="6013:6088" ph="UPDATE foods... " />
+            <marker date="1501628041000" expanded="true" signature="6310:6342" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
@@ -626,21 +642,29 @@
           <caret line="51" column="5" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
           <folding>
             <element signature="e#16#79#0" expanded="true" />
-            <marker date="1501626617000" expanded="true" signature="1229:1236" ph="SELECT name daily" />
-            <marker date="1501626617000" expanded="true" signature="1229:1294" ph="SELECT * FRO... daily" />
-            <marker date="1501626617000" expanded="true" signature="1229:1315" ph="SELECT id, n... foods" />
-            <marker date="1501626617000" expanded="true" signature="1229:1318" ph="SELECT id, n... foods" />
-            <marker date="1501626617000" expanded="true" signature="2028:2113" ph="SELECT * FRO... reviews" />
-            <marker date="1501626617000" expanded="true" signature="2028:2157" ph="SELECT * FRO... reviews" />
-            <marker date="1501626617000" expanded="true" signature="3419:3457" ph="SELECT id, n... " />
-            <marker date="1501626617000" expanded="true" signature="3419:3493" ph="SELECT id, n... foods" />
-            <marker date="1501626617000" expanded="true" signature="3892:3989" ph="INSERT INTO reviews... " />
-            <marker date="1501626617000" expanded="true" signature="4366:4420" ph="SELECT revie... foods" />
-            <marker date="1501626617000" expanded="true" signature="4889:4905" ph="UPDATE foods... " />
-            <marker date="1501626617000" expanded="true" signature="4889:4912" ph="UPDATE foods... " />
-            <marker date="1501626617000" expanded="true" signature="4889:4929" ph="UPDATE foods... " />
-            <marker date="1501626617000" expanded="true" signature="4889:4938" ph="UPDATE foods... " />
-            <marker date="1501626617000" expanded="true" signature="4889:4964" ph="UPDATE foods... " />
+            <marker date="1501628041000" expanded="true" signature="1229:1236" ph="SELECT name daily" />
+            <marker date="1501628041000" expanded="true" signature="1229:1294" ph="SELECT * FRO... daily" />
+            <marker date="1501628041000" expanded="true" signature="1229:1315" ph="SELECT id, n... foods" />
+            <marker date="1501628041000" expanded="true" signature="1229:1318" ph="SELECT id, n... foods" />
+            <marker date="1501628041000" expanded="true" signature="2028:2113" ph="SELECT * FRO... reviews" />
+            <marker date="1501628041000" expanded="true" signature="2028:2157" ph="SELECT * FRO... reviews" />
+            <marker date="1501628041000" expanded="true" signature="3419:3457" ph="SELECT id, n... " />
+            <marker date="1501628041000" expanded="true" signature="3419:3493" ph="SELECT id, n... foods" />
+            <marker date="1501628041000" expanded="true" signature="3892:3989" ph="INSERT INTO reviews... " />
+            <marker date="1501628041000" expanded="true" signature="4366:4420" ph="SELECT revie... foods" />
+            <marker date="1501628041000" expanded="true" signature="4886:4902" ph="UPDATE foods... " />
+            <marker date="1501628041000" expanded="true" signature="4886:4909" ph="UPDATE foods... " />
+            <marker date="1501628041000" expanded="true" signature="4886:4926" ph="UPDATE foods... " />
+            <marker date="1501628041000" expanded="true" signature="4886:4935" ph="UPDATE foods... " />
+            <marker date="1501628041000" expanded="true" signature="4886:4961" ph="UPDATE foods... " />
+            <marker date="1501628041000" expanded="true" signature="5378:5413" ph="SELECT ratin... reviews" />
+            <marker date="1501628041000" expanded="true" signature="5378:5415" ph="SELECT ratin... reviews" />
+            <marker date="1501628041000" expanded="true" signature="5378:5430" ph="SELECT ratin... reviews" />
+            <marker date="1501628041000" expanded="true" signature="5557:5589" ph="SELECT revie... " />
+            <marker date="1501628041000" expanded="true" signature="5557:5611" ph="SELECT revie... foods" />
+            <marker date="1501628041000" expanded="true" signature="6013:6081" ph="UPDATE foods... " />
+            <marker date="1501628041000" expanded="true" signature="6013:6088" ph="UPDATE foods... " />
+            <marker date="1501628041000" expanded="true" signature="6310:6342" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
@@ -726,21 +750,29 @@
           <caret line="90" column="1" lean-forward="true" selection-start-line="90" selection-start-column="1" selection-end-line="90" selection-end-column="1" />
           <folding>
             <element signature="e#16#79#0" expanded="true" />
-            <marker date="1501626617000" expanded="true" signature="1229:1236" ph="SELECT name daily" />
-            <marker date="1501626617000" expanded="true" signature="1229:1294" ph="SELECT * FRO... daily" />
-            <marker date="1501626617000" expanded="true" signature="1229:1315" ph="SELECT id, n... foods" />
-            <marker date="1501626617000" expanded="true" signature="1229:1318" ph="SELECT id, n... foods" />
-            <marker date="1501626617000" expanded="true" signature="2028:2113" ph="SELECT * FRO... reviews" />
-            <marker date="1501626617000" expanded="true" signature="2028:2157" ph="SELECT * FRO... reviews" />
-            <marker date="1501626617000" expanded="true" signature="3419:3457" ph="SELECT id, n... " />
-            <marker date="1501626617000" expanded="true" signature="3419:3493" ph="SELECT id, n... foods" />
-            <marker date="1501626617000" expanded="true" signature="3892:3989" ph="INSERT INTO reviews... " />
-            <marker date="1501626617000" expanded="true" signature="4366:4420" ph="SELECT revie... foods" />
-            <marker date="1501626617000" expanded="true" signature="4889:4905" ph="UPDATE foods... " />
-            <marker date="1501626617000" expanded="true" signature="4889:4912" ph="UPDATE foods... " />
-            <marker date="1501626617000" expanded="true" signature="4889:4929" ph="UPDATE foods... " />
-            <marker date="1501626617000" expanded="true" signature="4889:4938" ph="UPDATE foods... " />
-            <marker date="1501626617000" expanded="true" signature="4889:4964" ph="UPDATE foods... " />
+            <marker date="1501628041000" expanded="true" signature="1229:1236" ph="SELECT name daily" />
+            <marker date="1501628041000" expanded="true" signature="1229:1294" ph="SELECT * FRO... daily" />
+            <marker date="1501628041000" expanded="true" signature="1229:1315" ph="SELECT id, n... foods" />
+            <marker date="1501628041000" expanded="true" signature="1229:1318" ph="SELECT id, n... foods" />
+            <marker date="1501628041000" expanded="true" signature="2028:2113" ph="SELECT * FRO... reviews" />
+            <marker date="1501628041000" expanded="true" signature="2028:2157" ph="SELECT * FRO... reviews" />
+            <marker date="1501628041000" expanded="true" signature="3419:3457" ph="SELECT id, n... " />
+            <marker date="1501628041000" expanded="true" signature="3419:3493" ph="SELECT id, n... foods" />
+            <marker date="1501628041000" expanded="true" signature="3892:3989" ph="INSERT INTO reviews... " />
+            <marker date="1501628041000" expanded="true" signature="4366:4420" ph="SELECT revie... foods" />
+            <marker date="1501628041000" expanded="true" signature="4886:4902" ph="UPDATE foods... " />
+            <marker date="1501628041000" expanded="true" signature="4886:4909" ph="UPDATE foods... " />
+            <marker date="1501628041000" expanded="true" signature="4886:4926" ph="UPDATE foods... " />
+            <marker date="1501628041000" expanded="true" signature="4886:4935" ph="UPDATE foods... " />
+            <marker date="1501628041000" expanded="true" signature="4886:4961" ph="UPDATE foods... " />
+            <marker date="1501628041000" expanded="true" signature="5378:5413" ph="SELECT ratin... reviews" />
+            <marker date="1501628041000" expanded="true" signature="5378:5415" ph="SELECT ratin... reviews" />
+            <marker date="1501628041000" expanded="true" signature="5378:5430" ph="SELECT ratin... reviews" />
+            <marker date="1501628041000" expanded="true" signature="5557:5589" ph="SELECT revie... " />
+            <marker date="1501628041000" expanded="true" signature="5557:5611" ph="SELECT revie... foods" />
+            <marker date="1501628041000" expanded="true" signature="6013:6081" ph="UPDATE foods... " />
+            <marker date="1501628041000" expanded="true" signature="6013:6088" ph="UPDATE foods... " />
+            <marker date="1501628041000" expanded="true" signature="6310:6342" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
@@ -806,21 +838,29 @@
           <caret line="71" column="1" lean-forward="true" selection-start-line="71" selection-start-column="1" selection-end-line="71" selection-end-column="1" />
           <folding>
             <element signature="e#16#79#0" expanded="true" />
-            <marker date="1501626617000" expanded="true" signature="1229:1236" ph="SELECT name daily" />
-            <marker date="1501626617000" expanded="true" signature="1229:1294" ph="SELECT * FRO... daily" />
-            <marker date="1501626617000" expanded="true" signature="1229:1315" ph="SELECT id, n... foods" />
-            <marker date="1501626617000" expanded="true" signature="1229:1318" ph="SELECT id, n... foods" />
-            <marker date="1501626617000" expanded="true" signature="2028:2113" ph="SELECT * FRO... reviews" />
-            <marker date="1501626617000" expanded="true" signature="2028:2157" ph="SELECT * FRO... reviews" />
-            <marker date="1501626617000" expanded="true" signature="3419:3457" ph="SELECT id, n... " />
-            <marker date="1501626617000" expanded="true" signature="3419:3493" ph="SELECT id, n... foods" />
-            <marker date="1501626617000" expanded="true" signature="3892:3989" ph="INSERT INTO reviews... " />
-            <marker date="1501626617000" expanded="true" signature="4366:4420" ph="SELECT revie... foods" />
-            <marker date="1501626617000" expanded="true" signature="4889:4905" ph="UPDATE foods... " />
-            <marker date="1501626617000" expanded="true" signature="4889:4912" ph="UPDATE foods... " />
-            <marker date="1501626617000" expanded="true" signature="4889:4929" ph="UPDATE foods... " />
-            <marker date="1501626617000" expanded="true" signature="4889:4938" ph="UPDATE foods... " />
-            <marker date="1501626617000" expanded="true" signature="4889:4964" ph="UPDATE foods... " />
+            <marker date="1501628041000" expanded="true" signature="1229:1236" ph="SELECT name daily" />
+            <marker date="1501628041000" expanded="true" signature="1229:1294" ph="SELECT * FRO... daily" />
+            <marker date="1501628041000" expanded="true" signature="1229:1315" ph="SELECT id, n... foods" />
+            <marker date="1501628041000" expanded="true" signature="1229:1318" ph="SELECT id, n... foods" />
+            <marker date="1501628041000" expanded="true" signature="2028:2113" ph="SELECT * FRO... reviews" />
+            <marker date="1501628041000" expanded="true" signature="2028:2157" ph="SELECT * FRO... reviews" />
+            <marker date="1501628041000" expanded="true" signature="3419:3457" ph="SELECT id, n... " />
+            <marker date="1501628041000" expanded="true" signature="3419:3493" ph="SELECT id, n... foods" />
+            <marker date="1501628041000" expanded="true" signature="3892:3989" ph="INSERT INTO reviews... " />
+            <marker date="1501628041000" expanded="true" signature="4366:4420" ph="SELECT revie... foods" />
+            <marker date="1501628041000" expanded="true" signature="4886:4902" ph="UPDATE foods... " />
+            <marker date="1501628041000" expanded="true" signature="4886:4909" ph="UPDATE foods... " />
+            <marker date="1501628041000" expanded="true" signature="4886:4926" ph="UPDATE foods... " />
+            <marker date="1501628041000" expanded="true" signature="4886:4935" ph="UPDATE foods... " />
+            <marker date="1501628041000" expanded="true" signature="4886:4961" ph="UPDATE foods... " />
+            <marker date="1501628041000" expanded="true" signature="5378:5413" ph="SELECT ratin... reviews" />
+            <marker date="1501628041000" expanded="true" signature="5378:5415" ph="SELECT ratin... reviews" />
+            <marker date="1501628041000" expanded="true" signature="5378:5430" ph="SELECT ratin... reviews" />
+            <marker date="1501628041000" expanded="true" signature="5557:5589" ph="SELECT revie... " />
+            <marker date="1501628041000" expanded="true" signature="5557:5611" ph="SELECT revie... foods" />
+            <marker date="1501628041000" expanded="true" signature="6013:6081" ph="UPDATE foods... " />
+            <marker date="1501628041000" expanded="true" signature="6013:6088" ph="UPDATE foods... " />
+            <marker date="1501628041000" expanded="true" signature="6310:6342" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
@@ -1006,33 +1046,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="175" column="36" lean-forward="false" selection-start-line="175" selection-start-column="36" selection-end-line="175" selection-end-column="36" />
+        <state relative-caret-position="381">
+          <caret line="231" column="5" lean-forward="false" selection-start-line="231" selection-start-column="5" selection-end-line="231" selection-end-column="5" />
           <folding>
             <element signature="e#16#79#0" expanded="true" />
-            <marker date="1501626617000" expanded="true" signature="1229:1236" ph="SELECT name daily" />
-            <marker date="1501626617000" expanded="true" signature="1229:1294" ph="SELECT * FRO... daily" />
-            <marker date="1501626617000" expanded="true" signature="1229:1315" ph="SELECT id, n... foods" />
-            <marker date="1501626617000" expanded="true" signature="1229:1318" ph="SELECT id, n... foods" />
-            <marker date="1501626617000" expanded="true" signature="2028:2113" ph="SELECT * FRO... reviews" />
-            <marker date="1501626617000" expanded="true" signature="2028:2157" ph="SELECT * FRO... reviews" />
-            <marker date="1501626617000" expanded="true" signature="3419:3457" ph="SELECT id, n... " />
-            <marker date="1501626617000" expanded="true" signature="3419:3493" ph="SELECT id, n... foods" />
-            <marker date="1501626617000" expanded="true" signature="3892:3989" ph="INSERT INTO reviews... " />
-            <marker date="1501626617000" expanded="true" signature="4366:4420" ph="SELECT revie... foods" />
-            <marker date="1501626617000" expanded="true" signature="4889:4905" ph="UPDATE foods... " />
-            <marker date="1501626617000" expanded="true" signature="4889:4912" ph="UPDATE foods... " />
-            <marker date="1501626617000" expanded="true" signature="4889:4929" ph="UPDATE foods... " />
-            <marker date="1501626617000" expanded="true" signature="4889:4938" ph="UPDATE foods... " />
-            <marker date="1501626617000" expanded="true" signature="4889:4964" ph="UPDATE foods... " />
+            <marker date="1501628041000" expanded="true" signature="1229:1236" ph="SELECT name daily" />
+            <marker date="1501628041000" expanded="true" signature="1229:1294" ph="SELECT * FRO... daily" />
+            <marker date="1501628041000" expanded="true" signature="1229:1315" ph="SELECT id, n... foods" />
+            <marker date="1501628041000" expanded="true" signature="1229:1318" ph="SELECT id, n... foods" />
+            <marker date="1501628041000" expanded="true" signature="2028:2113" ph="SELECT * FRO... reviews" />
+            <marker date="1501628041000" expanded="true" signature="2028:2157" ph="SELECT * FRO... reviews" />
+            <marker date="1501628041000" expanded="true" signature="3419:3457" ph="SELECT id, n... " />
+            <marker date="1501628041000" expanded="true" signature="3419:3493" ph="SELECT id, n... foods" />
+            <marker date="1501628041000" expanded="true" signature="3892:3989" ph="INSERT INTO reviews... " />
+            <marker date="1501628041000" expanded="true" signature="4366:4420" ph="SELECT revie... foods" />
+            <marker date="1501628041000" expanded="true" signature="4886:4902" ph="UPDATE foods... " />
+            <marker date="1501628041000" expanded="true" signature="4886:4909" ph="UPDATE foods... " />
+            <marker date="1501628041000" expanded="true" signature="4886:4926" ph="UPDATE foods... " />
+            <marker date="1501628041000" expanded="true" signature="4886:4935" ph="UPDATE foods... " />
+            <marker date="1501628041000" expanded="true" signature="4886:4961" ph="UPDATE foods... " />
+            <marker date="1501628041000" expanded="true" signature="5378:5413" ph="SELECT ratin... reviews" />
+            <marker date="1501628041000" expanded="true" signature="5378:5415" ph="SELECT ratin... reviews" />
+            <marker date="1501628041000" expanded="true" signature="5378:5430" ph="SELECT ratin... reviews" />
+            <marker date="1501628041000" expanded="true" signature="5557:5589" ph="SELECT revie... " />
+            <marker date="1501628041000" expanded="true" signature="5557:5611" ph="SELECT revie... foods" />
+            <marker date="1501628041000" expanded="true" signature="6013:6081" ph="UPDATE foods... " />
+            <marker date="1501628041000" expanded="true" signature="6013:6088" ph="UPDATE foods... " />
+            <marker date="1501628041000" expanded="true" signature="6310:6342" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cmd/CMenu/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1290">
-          <caret line="86" column="1" lean-forward="true" selection-start-line="86" selection-start-column="1" selection-end-line="86" selection-end-column="1" />
+        <state relative-caret-position="398">
+          <caret line="93" column="26" lean-forward="true" selection-start-line="93" selection-start-column="26" selection-end-line="93" selection-end-column="26" />
           <folding>
             <element signature="e#14#186#0" expanded="true" />
           </folding>

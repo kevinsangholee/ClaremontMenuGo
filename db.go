@@ -171,7 +171,7 @@ func AddReview(db *sql.DB, food_id string, user_id string, rating string, review
 	row.Scan(&review_count, &total_score)
 
 	// Increment review count and total score
-	review_count += 1
+	review_count++
 	parsedRating, _ := strconv.ParseInt(rating, 10, 64)
 	total_score += int(parsedRating)
 
@@ -189,6 +189,47 @@ func AddReview(db *sql.DB, food_id string, user_id string, rating string, review
 	}
 
 	return review_id
+}
+
+/*
+	This function is for the phone to delete a review and update all averages accordingly
+ */
+func DeleteReview(db *sql.DB, review_id string, food_id string) {
+	// First get the actual rating from the review given the review_id
+	row := db.QueryRow("SELECT rating FROM reviews WHERE id = " + review_id)
+	var rating int
+	row.Scan(&rating)
+
+	// Get the current review count and total score from the foods table
+	row = db.QueryRow("SELECT review_count, total_score FROM foods WHERE id = " + food_id)
+	var review_count int
+	var total_score int
+	row.Scan(&review_count, &total_score)
+
+	// Decrement review count and subtract total_score from rating, and calculate the average again
+	review_count--
+	total_score -= rating
+	new_average := strconv.FormatFloat(float64(total_score) / float64(review_count), 'E', 2, 64)
+
+	// Insert the new values back into foods table
+	stmt, err := db.Prepare("UPDATE foods SET review_count = ?, total_score = ?, rating = ? WHERE id = ?")
+	if err != nil {
+		log.Fatal(err)
+	}
+	_, err = stmt.Exec(review_count, total_score, new_average, food_id)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	// Finally, delete the review from reviews table
+	stmt, err = db.Prepare("DELETE FROM reviews WHERE id = ?")
+	if err != nil {
+		log.Fatal(err)
+	}
+	_, err = stmt.Exec(review_id)
+	if err != nil {
+		log.Fatal(err)
+	}
 }
 
 /*
