@@ -98,6 +98,30 @@ func GetReviews(db *sql.DB, foodID string) []*ReviewItem {
 	return reviews
 }
 
+func GetMeal(db *sql.DB, school string, meal string) []*FoodItem {
+	foods := make([]*FoodItem, 0)
+
+	query := "SELECT id, name, school, image, review_count, rating FROM foods WHERE school = " +
+		school + " AND daily LIKE '%" + meal + "%'"
+
+	rows, err := db.Query(query)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	for rows.Next() {
+		foodItem := new(FoodItem)
+		err := rows.Scan(&foodItem.Id, &foodItem.Name, &foodItem.School, &foodItem.Image, &foodItem.Review_count, &foodItem.Rating)
+		if err != nil {
+			log.Fatal(err)
+		}
+		foods = append(foods, foodItem)
+	}
+
+	return foods
+
+}
+
 func IsWeekend() bool {
 	t := time.Now().Weekday()
 	return t == 0 || t == 6

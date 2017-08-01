@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="875173a0-369b-4419-98c9-79beefd4c2c7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmd/daily/daily.go" afterPath="$PROJECT_DIR$/cmd/daily/daily.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmd/CMenu/main.go" afterPath="$PROJECT_DIR$/cmd/CMenu/main.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.go" afterPath="$PROJECT_DIR$/db.go" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,13 +16,13 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.go" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cmd/CMenu/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="754">
-              <caret line="59" column="1" lean-forward="false" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
+            <state relative-caret-position="388">
+              <caret line="64" column="28" lean-forward="true" selection-start-line="64" selection-start-column="28" selection-end-line="64" selection-end-column="28" />
               <folding>
-                <element signature="e#14#175#0" expanded="true" />
+                <element signature="e#14#169#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -30,25 +31,25 @@
       <file leaf-file-name="db.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="71" column="24" lean-forward="true" selection-start-line="71" selection-start-column="24" selection-end-line="71" selection-end-column="24" />
+            <state relative-caret-position="318">
+              <caret line="104" column="44" lean-forward="false" selection-start-line="104" selection-start-column="44" selection-end-line="104" selection-end-column="44" />
               <folding>
                 <element signature="e#16#79#0" expanded="true" />
-                <marker date="1501452961000" expanded="true" signature="1161:1168" ph="SELECT name daily" />
-                <marker date="1501452961000" expanded="true" signature="1161:1226" ph="SELECT * FRO... daily" />
-                <marker date="1501452961000" expanded="true" signature="1161:1247" ph="SELECT id, n... foods" />
-                <marker date="1501452961000" expanded="true" signature="1161:1250" ph="SELECT id, n... foods" />
-                <marker date="1501452961000" expanded="true" signature="1892:1959" ph="SELECT * FRO... reviews" />
-                <marker date="1501452961000" expanded="true" signature="1892:2003" ph="SELECT * FRO... reviews" />
+                <marker date="1501610164000" expanded="true" signature="1161:1168" ph="SELECT name daily" />
+                <marker date="1501610164000" expanded="true" signature="1161:1226" ph="SELECT * FRO... daily" />
+                <marker date="1501610164000" expanded="true" signature="1161:1247" ph="SELECT id, n... foods" />
+                <marker date="1501610164000" expanded="true" signature="1161:1250" ph="SELECT id, n... foods" />
+                <marker date="1501610164000" expanded="true" signature="1892:1959" ph="SELECT * FRO... reviews" />
+                <marker date="1501610164000" expanded="true" signature="1892:2003" ph="SELECT * FRO... reviews" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="daily.go" pinned="false" current-in-tab="true">
+      <file leaf-file-name="daily.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cmd/daily/daily.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1875">
+            <state relative-caret-position="480">
               <caret line="125" column="90" lean-forward="false" selection-start-line="125" selection-start-column="90" selection-end-line="125" selection-end-column="90" />
               <folding>
                 <element signature="e#14#198#0" expanded="true" />
@@ -67,7 +68,7 @@
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="4" column="6" lean-forward="true" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+              <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -96,7 +97,7 @@
       <file leaf-file-name="index_weekend.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/index_weekend.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-82">
+            <state relative-caret-position="75">
               <caret line="5" column="288" lean-forward="false" selection-start-line="5" selection-start-column="288" selection-end-line="5" selection-end-column="288" />
               <folding />
             </state>
@@ -162,12 +163,12 @@
         <option value="$PROJECT_DIR$/cmd/CMenu/db.go" />
         <option value="$PROJECT_DIR$/templates/head.html" />
         <option value="$PROJECT_DIR$/js/script.js" />
-        <option value="$PROJECT_DIR$/db.go" />
         <option value="$PROJECT_DIR$/templates/index_weekend.html" />
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/templates/index.html" />
-        <option value="$PROJECT_DIR$/cmd/CMenu/main.go" />
         <option value="$PROJECT_DIR$/cmd/daily/daily.go" />
+        <option value="$PROJECT_DIR$/db.go" />
+        <option value="$PROJECT_DIR$/cmd/CMenu/main.go" />
       </list>
     </option>
   </component>
@@ -361,7 +362,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Application.Build daily.go and run">
+  <component name="RunManager" selected="Go Single File.go run main.go (1)">
     <configuration default="false" name="go run main.go" type="GoRunFileConfiguration" factoryName="Go Single File" temporary="true">
       <module name="ClaremontMenuGo" />
       <working_directory value="$PROJECT_DIR$" />
@@ -456,8 +457,8 @@
     </list>
     <recent_temporary>
       <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Go Application.Build daily.go and run" />
-        <item index="1" class="java.lang.String" itemvalue="Go Single File.go run main.go (1)" />
+        <item index="0" class="java.lang.String" itemvalue="Go Single File.go run main.go (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Go Application.Build daily.go and run" />
         <item index="2" class="java.lang.String" itemvalue="Go Single File.go run main.go" />
       </list>
     </recent_temporary>
@@ -473,7 +474,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22556391" sideWeight="0.39166668" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33733332" sideWeight="0.60833335" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.336" sideWeight="0.60833335" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -525,7 +526,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#14#175#0" expanded="true" />
+            <element signature="e#14#169#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -536,12 +537,12 @@
           <caret line="51" column="5" lean-forward="false" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
           <folding>
             <element signature="e#16#79#0" expanded="true" />
-            <marker date="1501452961000" expanded="true" signature="1161:1168" ph="SELECT name daily" />
-            <marker date="1501452961000" expanded="true" signature="1161:1226" ph="SELECT * FRO... daily" />
-            <marker date="1501452961000" expanded="true" signature="1161:1247" ph="SELECT id, n... foods" />
-            <marker date="1501452961000" expanded="true" signature="1161:1250" ph="SELECT id, n... foods" />
-            <marker date="1501452961000" expanded="true" signature="1892:1959" ph="SELECT * FRO... reviews" />
-            <marker date="1501452961000" expanded="true" signature="1892:2003" ph="SELECT * FRO... reviews" />
+            <marker date="1501610164000" expanded="true" signature="1161:1168" ph="SELECT name daily" />
+            <marker date="1501610164000" expanded="true" signature="1161:1226" ph="SELECT * FRO... daily" />
+            <marker date="1501610164000" expanded="true" signature="1161:1247" ph="SELECT id, n... foods" />
+            <marker date="1501610164000" expanded="true" signature="1161:1250" ph="SELECT id, n... foods" />
+            <marker date="1501610164000" expanded="true" signature="1892:1959" ph="SELECT * FRO... reviews" />
+            <marker date="1501610164000" expanded="true" signature="1892:2003" ph="SELECT * FRO... reviews" />
           </folding>
         </state>
       </provider>
@@ -597,7 +598,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#14#175#0" expanded="true" />
+            <element signature="e#14#169#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -608,12 +609,12 @@
           <caret line="51" column="5" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
           <folding>
             <element signature="e#16#79#0" expanded="true" />
-            <marker date="1501452961000" expanded="true" signature="1161:1168" ph="SELECT name daily" />
-            <marker date="1501452961000" expanded="true" signature="1161:1226" ph="SELECT * FRO... daily" />
-            <marker date="1501452961000" expanded="true" signature="1161:1247" ph="SELECT id, n... foods" />
-            <marker date="1501452961000" expanded="true" signature="1161:1250" ph="SELECT id, n... foods" />
-            <marker date="1501452961000" expanded="true" signature="1892:1959" ph="SELECT * FRO... reviews" />
-            <marker date="1501452961000" expanded="true" signature="1892:2003" ph="SELECT * FRO... reviews" />
+            <marker date="1501610164000" expanded="true" signature="1161:1168" ph="SELECT name daily" />
+            <marker date="1501610164000" expanded="true" signature="1161:1226" ph="SELECT * FRO... daily" />
+            <marker date="1501610164000" expanded="true" signature="1161:1247" ph="SELECT id, n... foods" />
+            <marker date="1501610164000" expanded="true" signature="1161:1250" ph="SELECT id, n... foods" />
+            <marker date="1501610164000" expanded="true" signature="1892:1959" ph="SELECT * FRO... reviews" />
+            <marker date="1501610164000" expanded="true" signature="1892:2003" ph="SELECT * FRO... reviews" />
           </folding>
         </state>
       </provider>
@@ -699,12 +700,12 @@
           <caret line="90" column="1" lean-forward="true" selection-start-line="90" selection-start-column="1" selection-end-line="90" selection-end-column="1" />
           <folding>
             <element signature="e#16#79#0" expanded="true" />
-            <marker date="1501452961000" expanded="true" signature="1161:1168" ph="SELECT name daily" />
-            <marker date="1501452961000" expanded="true" signature="1161:1226" ph="SELECT * FRO... daily" />
-            <marker date="1501452961000" expanded="true" signature="1161:1247" ph="SELECT id, n... foods" />
-            <marker date="1501452961000" expanded="true" signature="1161:1250" ph="SELECT id, n... foods" />
-            <marker date="1501452961000" expanded="true" signature="1892:1959" ph="SELECT * FRO... reviews" />
-            <marker date="1501452961000" expanded="true" signature="1892:2003" ph="SELECT * FRO... reviews" />
+            <marker date="1501610164000" expanded="true" signature="1161:1168" ph="SELECT name daily" />
+            <marker date="1501610164000" expanded="true" signature="1161:1226" ph="SELECT * FRO... daily" />
+            <marker date="1501610164000" expanded="true" signature="1161:1247" ph="SELECT id, n... foods" />
+            <marker date="1501610164000" expanded="true" signature="1161:1250" ph="SELECT id, n... foods" />
+            <marker date="1501610164000" expanded="true" signature="1892:1959" ph="SELECT * FRO... reviews" />
+            <marker date="1501610164000" expanded="true" signature="1892:2003" ph="SELECT * FRO... reviews" />
           </folding>
         </state>
       </provider>
@@ -738,7 +739,7 @@
         <state relative-caret-position="90">
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="17" selection-end-column="5" />
           <folding>
-            <element signature="e#14#175#0" expanded="true" />
+            <element signature="e#14#169#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -770,12 +771,12 @@
           <caret line="71" column="1" lean-forward="true" selection-start-line="71" selection-start-column="1" selection-end-line="71" selection-end-column="1" />
           <folding>
             <element signature="e#16#79#0" expanded="true" />
-            <marker date="1501452961000" expanded="true" signature="1161:1168" ph="SELECT name daily" />
-            <marker date="1501452961000" expanded="true" signature="1161:1226" ph="SELECT * FRO... daily" />
-            <marker date="1501452961000" expanded="true" signature="1161:1247" ph="SELECT id, n... foods" />
-            <marker date="1501452961000" expanded="true" signature="1161:1250" ph="SELECT id, n... foods" />
-            <marker date="1501452961000" expanded="true" signature="1892:1959" ph="SELECT * FRO... reviews" />
-            <marker date="1501452961000" expanded="true" signature="1892:2003" ph="SELECT * FRO... reviews" />
+            <marker date="1501610164000" expanded="true" signature="1161:1168" ph="SELECT name daily" />
+            <marker date="1501610164000" expanded="true" signature="1161:1226" ph="SELECT * FRO... daily" />
+            <marker date="1501610164000" expanded="true" signature="1161:1247" ph="SELECT id, n... foods" />
+            <marker date="1501610164000" expanded="true" signature="1161:1250" ph="SELECT id, n... foods" />
+            <marker date="1501610164000" expanded="true" signature="1892:1959" ph="SELECT * FRO... reviews" />
+            <marker date="1501610164000" expanded="true" signature="1892:2003" ph="SELECT * FRO... reviews" />
           </folding>
         </state>
       </provider>
@@ -785,7 +786,7 @@
         <state relative-caret-position="405">
           <caret line="27" column="32" lean-forward="true" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
           <folding>
-            <element signature="e#14#175#0" expanded="true" />
+            <element signature="e#14#169#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -826,7 +827,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#14#175#0" expanded="true" />
+            <element signature="e#14#169#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -895,14 +896,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/foot.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="9" lean-forward="false" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/head.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -913,7 +906,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index_weekend.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-82">
+        <state relative-caret-position="75">
           <caret line="5" column="288" lean-forward="false" selection-start-line="5" selection-start-column="288" selection-end-line="5" selection-end-column="288" />
           <folding />
         </state>
@@ -924,22 +917,6 @@
         <state relative-caret-position="1650">
           <caret line="110" column="16" lean-forward="false" selection-start-line="110" selection-start-column="16" selection-end-line="110" selection-end-column="16" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="71" column="24" lean-forward="true" selection-start-line="71" selection-start-column="24" selection-end-line="71" selection-end-column="24" />
-          <folding>
-            <element signature="e#16#79#0" expanded="true" />
-            <marker date="1501452961000" expanded="true" signature="1161:1168" ph="SELECT name daily" />
-            <marker date="1501452961000" expanded="true" signature="1161:1226" ph="SELECT * FRO... daily" />
-            <marker date="1501452961000" expanded="true" signature="1161:1247" ph="SELECT id, n... foods" />
-            <marker date="1501452961000" expanded="true" signature="1161:1250" ph="SELECT id, n... foods" />
-            <marker date="1501452961000" expanded="true" signature="1892:1959" ph="SELECT * FRO... reviews" />
-            <marker date="1501452961000" expanded="true" signature="1892:2003" ph="SELECT * FRO... reviews" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -954,24 +931,38 @@
     <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="6" lean-forward="true" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+          <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cmd/CMenu/main.go">
+    <entry file="file://$PROJECT_DIR$/templates/foot.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="754">
-          <caret line="59" column="1" lean-forward="false" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
+        <state relative-caret-position="105">
+          <caret line="7" column="9" lean-forward="false" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="104" column="44" lean-forward="false" selection-start-line="104" selection-start-column="44" selection-end-line="104" selection-end-column="44" />
           <folding>
-            <element signature="e#14#175#0" expanded="true" />
+            <element signature="e#16#79#0" expanded="true" />
+            <marker date="1501610164000" expanded="true" signature="1161:1168" ph="SELECT name daily" />
+            <marker date="1501610164000" expanded="true" signature="1161:1226" ph="SELECT * FRO... daily" />
+            <marker date="1501610164000" expanded="true" signature="1161:1247" ph="SELECT id, n... foods" />
+            <marker date="1501610164000" expanded="true" signature="1161:1250" ph="SELECT id, n... foods" />
+            <marker date="1501610164000" expanded="true" signature="1892:1959" ph="SELECT * FRO... reviews" />
+            <marker date="1501610164000" expanded="true" signature="1892:2003" ph="SELECT * FRO... reviews" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cmd/daily/daily.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1875">
+        <state relative-caret-position="480">
           <caret line="125" column="90" lean-forward="false" selection-start-line="125" selection-start-column="90" selection-end-line="125" selection-end-column="90" />
           <folding>
             <element signature="e#14#198#0" expanded="true" />
@@ -981,6 +972,16 @@
             <marker date="1501543120000" expanded="true" signature="2500:2563" ph="INSERT INTO foods... " />
             <marker date="1501543120000" expanded="true" signature="3072:3122" ph="UPDATE foods... " />
             <marker date="1501543120000" expanded="true" signature="3492:3531" ph="UPDATE foods... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmd/CMenu/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="64" column="28" lean-forward="true" selection-start-line="64" selection-start-column="28" selection-end-line="64" selection-end-column="28" />
+          <folding>
+            <element signature="e#14#169#0" expanded="true" />
           </folding>
         </state>
       </provider>
