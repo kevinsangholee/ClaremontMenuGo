@@ -237,7 +237,7 @@ func DeleteReview(db *sql.DB, review_id string, food_id string) {
  */
 func UpdateReview(db *sql.DB, review_id string, rating string, review_text string, created_at string) {
 	// Get food_id and current rating from the review to update
-	row := db.QueryRow("SELECT food_id, rating FROM reviews WHERE review_id = " + review_id)
+	row := db.QueryRow("SELECT food_id, rating FROM reviews WHERE id = " + review_id)
 	var food_id int
 	var old_rating int
 	row.Scan(&food_id, &old_rating)
@@ -252,13 +252,6 @@ func UpdateReview(db *sql.DB, review_id string, rating string, review_text strin
 	parsedRating, _ := strconv.ParseInt(rating, 10, 64)
 	total_score = total_score - old_rating + int(parsedRating)
 	new_average := strconv.FormatFloat(float64(total_score) / float64(review_count), 'E', 2, 64)
-	log.Println("Review id: " + review_id)
-	log.Println("Food id: " + strconv.Itoa(food_id))
-	log.Println("Old rating: " + strconv.Itoa(old_rating))
-	log.Println("New rating: " + rating)
-	log.Println("Review count: " + strconv.Itoa(review_count))
-	log.Println("New total score: " + strconv.Itoa(total_score))
-	log.Println("New calculated average: " + new_average)
 
 	// Update foods table
 	stmt, err := db.Prepare("UPDATE foods SET total_score = ?, rating = ? WHERE id = ?")
