@@ -252,6 +252,8 @@ func UpdateReview(db *sql.DB, review_id string, rating string, review_text strin
 	parsedRating, _ := strconv.ParseInt(rating, 10, 64)
 	total_score = total_score - old_rating + int(parsedRating)
 	new_average := strconv.FormatFloat(float64(total_score) / float64(review_count), 'E', 2, 64)
+	log.Println("Review id: " + review_id)
+	log.Println("Food id: " + strconv.Itoa(food_id))
 	log.Println("Old rating: " + strconv.Itoa(old_rating))
 	log.Println("New rating: " + rating)
 	log.Println("Review count: " + strconv.Itoa(review_count))
