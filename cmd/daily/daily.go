@@ -170,7 +170,11 @@ func queryBingImageSearch(client *http.Client, foodName string) string {
 		log.Fatal(err)
 	}
 
-	return data.Values[0].ContentUrl
+	if(len(data.Values) != 0) {
+		return data.Values[0].ContentUrl
+	} else {
+		return "";
+	}
 
 }
 

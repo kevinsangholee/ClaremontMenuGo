@@ -13,9 +13,19 @@ $(document).ready(function() {
         heightStyle: 'panel'
     });
     $('.menu_table').hide();
-    $('#table00').show();
+    var today = new Date();
+    if(today.getDay() == 6 || today.getDay() == 0) {
+        $('#table03').show();
+    } else {
+        $('#table00').show();
+    }
 
+    // Fade header
+    $('.hdr').animate({
+        opacity: 1,
+    }, 1500)
 
+    // Creating the rating stars for each food item
     $('.rating_stars').each(function(i, star) {
         var rateNum = $(star).siblings('.rating_number').text();
         rateNum = parseFloat(rateNum.substring(1, rateNum.length - 3));
@@ -25,6 +35,7 @@ $(document).ready(function() {
         });
     });
 
+    // Hover scroll for long food names
     $('span').each(function(i, nameSpan) {
         var name = $(nameSpan).text();
         if(name.length >= 35) {
@@ -32,10 +43,12 @@ $(document).ready(function() {
         }
     });
 
+    // Cleaning up the border look
     $('.menu_table').each(function(i, menu) {
         $(this).children('.food_cell').last().css("border-bottom", "1px solid #ccc");
     });
 
+    // Get reviews for each food item the moment that the page loads
     $('.food_cell').each(function(i, foodCell) {
         var foodID = $(foodCell).attr('id');
         $.ajax({
@@ -64,6 +77,8 @@ $(document).ready(function() {
             }
         })
     });
+
+
 
     /*------------------------------------*/
     /*          Handling Clicks           */

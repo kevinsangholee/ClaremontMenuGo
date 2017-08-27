@@ -55,6 +55,10 @@ h2 {
 
 /* Main top part */
 
+.hdr {
+    opacity: 0;
+}
+
 #logo {
     width: 256px;
     height: 256px;

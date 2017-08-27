@@ -102,6 +102,6 @@ func main() {
 		c.String(http.StatusOK, "Review updated!")
 	})
 
+	//router.Run(":" + port)
 	router.Run(":" + port)
-	//router.Run(":8080")
 }

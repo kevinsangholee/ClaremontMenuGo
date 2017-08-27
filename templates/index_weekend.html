@@ -2,8 +2,9 @@
 
 <header>
     <img id="logo" class="hdr" src="/img/logo.png" alt="Claremont Menu logo">
-    <h1 id="title_text">Claremont Menu</h1>
-    <a href='https://play.google.com/store/apps/details?id=com.ksl.kevinlee.claremontmenu&hl=en&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
+    <h1 id="title_text" class="hdr">Claremont Menu</h1>
+    <a class="hdr" href='https://play.google.com/store/apps/details?id=com.ksl.kevinlee.claremontmenu&hl=en&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
+    <a class="hdr" href="https://itunes.apple.com/us/app/claremont-menu/id1222727022?mt=8#"><img id="app_store_badge" alt='Get it on the App Store' src="/img/app_store_badge.svg" /></a>
 </header>
 <div class="container">
     <div class="col-md-8 col-md-offset-2 menu_div">
@@ -21,27 +22,27 @@
             <button class="mealtab meal_end" id="dinner">Dinner</button>
         </div>
         {{ range $key, $value := .foodData }}
-        <div class="menu_table" id="table{{ $key }}">
+            <div class="menu_table" id="table{{ $key }}">
             {{ if $value }}
-            {{ range $foodItem := $value }}
-            <div class="food_cell" id="{{ $foodItem.Id }}">
-                {{ if eq $foodItem.Image "null" }}
-                <img src="/img/noimage.png" alt="image" class="food_image">
-                {{ else }}
-                <img src="{{ $foodItem.Image }}" alt="image" class="food_image">
+                {{ range $foodItem := $value }}
+                    <div class="food_cell" id="{{ $foodItem.Id }}">
+                        {{ if eq $foodItem.Image "null" }}
+                            <img src="/img/noimage.png" alt="image" class="food_image">
+                        {{ else }}
+                            <img src="{{ $foodItem.Image }}" alt="image" class="food_image">
+                        {{ end }}
+                        <h3 class="food_name"><span>{{ $foodItem.Name }}</span></h3>
+                        <div class="rating_stars"></div>
+                        <h2 class="rating_number">({{ $foodItem.Rating }}/5)</h2>
+                    </div>
+                    <div class="reviews_cell">
+                    </div>
                 {{ end }}
-                <h3 class="food_name"><span>{{ $foodItem.Name }}</span></h3>
-                <div class="rating_stars"></div>
-                <h2 class="rating_number">({{ $foodItem.Rating }}/5)</h2>
-            </div>
-            <div class="reviews_cell">
-            </div>
-            {{ end }}
             {{ else }}
-            <div class="empty_menu">
-                <img src = "/img/face.png">
-                <h1>Nothing on the menu for today!</h1>
-            </div>
+                <div class="empty_menu">
+                    <img src = "/img/face.png">
+                    <h1>Nothing on the menu for today!</h1>
+                </div>
             {{ end }}
         </div>
         {{ end }}
